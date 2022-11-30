@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Pages on LBA</title>
+        <link>https://demo.stack.jimmycai.com/page/</link>
+        <description>Recent content in Pages on LBA</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>fr-BE</language><atom:link href="https://demo.stack.jimmycai.com/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CSS</title>
+        <link>https://demo.stack.jimmycai.com/css/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://demo.stack.jimmycai.com/css/</guid>
+        <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;le CSS (Cascading Style Sheets) ou Feuilles de style en cascade en français est un language pour mettre en forme des pages internet.&lt;/p&gt;
+&lt;p&gt;Il permet de décrire comment les éléments doivent être affichés à l&amp;rsquo;écran.&lt;/p&gt;
+&lt;p&gt;Il existe plusieurs moyens d&amp;rsquo;importer du CSS dans une page :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Via un fichier externe.&lt;/li&gt;
+&lt;li&gt;Via un lien externe.&lt;/li&gt;
+&lt;li&gt;Directement dans la page via l&amp;rsquo;en-tête.&lt;/li&gt;
+&lt;li&gt;Directement dans la page via les éléments HTML.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Le terme en &amp;lsquo;cascade&amp;rsquo; signifie qu&amp;rsquo;on peut définir plusieurs fois des règles pour un même élement. Il y a une notion de priorité pour savoir quel règle est prioritaire par apport à une autre quand il existe plusieurs définitions.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;En premier, le CSS va appliquer les règles dans les fichiers ou lien externe suivant la priorité définie dans le &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; (du haut vers le bas).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;En 2éme, il va importer le style défini dans le &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; via la balise &lt;code&gt;&amp;lt;style&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;En 3éme, il va appliquer le CSS qui est défini directement dans la balise HTML.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Cette règle de lecture est en réalité pas correct, le CSS va être lu du haut vers le bas.&lt;/p&gt;
+&lt;p&gt;Il est donc possible que les règles dans la balise &lt;code&gt;&amp;lt;style&amp;gt;&lt;/code&gt; défnie dans &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; soit écrasé si des ressources exeternes est définies &lt;em&gt;&lt;strong&gt;après&lt;/strong&gt;&lt;/em&gt;. Néanmoins, l&amp;rsquo;idée est de partir des règles génériques au plus spécifique. Il n&amp;rsquo;y a donc aucun logique a ne pas importer les fichiers externes en premier.&lt;/p&gt;
+&lt;p&gt;Quand une règle est défini plusieurs fois, alors cette règle est appliqué pour savoir quel est la plus prioritaire :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Règle de balise&lt;/li&gt;
+&lt;li&gt;Règle de class&lt;/li&gt;
+&lt;li&gt;Règle d&amp;rsquo;id&lt;/li&gt;
+&lt;li&gt;Règle dans la balise&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Exemple de priorité en CSS :
+&lt;a class=&#34;link&#34; href=&#34;https://codesandbox.io/s/css-priorite-remhet?file=/index.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://codesandbox.io/s/css-priorite-remhet?file=/index.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;les-couleurs-en-css&#34;&gt;Les couleurs en CSS&lt;/h2&gt;
+&lt;p&gt;Les couleurs sont spécifiées à l&amp;rsquo;aide de noms de couleurs prédéfinis ou de valeurs en format RVB, HEX, HSL, RGBA, HSLA.&lt;/p&gt;
+&lt;p&gt;De manière général, les couleurs sont définie en HEX et RGB(A) dans les librairies CSS.&lt;/p&gt;
+&lt;p&gt;Il existe 140 couleurs de base en CSS : &lt;a class=&#34;link&#34; href=&#34;https://www.w3schools.com/cssref/css_colors.php&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.w3schools.com/cssref/css_colors.php&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Exemple pour le texte en rouge dans les paragraphes :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;color&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;red&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;hexadecimal&#34;&gt;Hexadecimal&lt;/h3&gt;
+&lt;p&gt;les couleurs sont définies en base 16:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;#000000 : noir&lt;/li&gt;
+&lt;li&gt;#ffffff : blanc&lt;/li&gt;
+&lt;li&gt;#ff0000 : rouge&lt;/li&gt;
+&lt;li&gt;#00ff00 : vert&lt;/li&gt;
+&lt;li&gt;#0000ff : bleu&lt;/li&gt;
+&lt;li&gt;#ffff00 : jaune&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Exemple pour le texte en rouge dans les paragraphes :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;color&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mh&#34;&gt;#ff0000&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Il est possible de définir une transparence en hexadecimal.&lt;/p&gt;
+&lt;h3 id=&#34;rgb&#34;&gt;RGB&lt;/h3&gt;
+&lt;p&gt;On peut également définir les couleurs en RGB (Red Green Blue) de 0 à 255 ou de 0 à 100%.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;rgb(0, 0, 0) : noir&lt;/li&gt;
+&lt;li&gt;rgb(255, 255, 255) : blanc&lt;/li&gt;
+&lt;li&gt;rgb(255, 0, 0) : rouge&lt;/li&gt;
+&lt;li&gt;rgb(0, 255, 0) : vert&lt;/li&gt;
+&lt;li&gt;rgb(0, 0, 255) : bleu&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;rgba()&lt;/code&gt; permet de définir un alpha de 0.0 (transparent) à 1.0 (complétement opaque).&lt;/p&gt;
+&lt;p&gt;Exemple pour le texte en noir dans les paragraphes :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;color&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;rgb&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;255&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;hsl&#34;&gt;HSL&lt;/h3&gt;
+&lt;p&gt;HSL pour Hue, Saturation and Lightness (Teinte, Saturation et Luminosité)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;hsl(0, 0%, 0%) : noir&lt;/li&gt;
+&lt;li&gt;hsl(100, 100%, 100%) : blanc&lt;/li&gt;
+&lt;li&gt;hsl(0, 100%, 50%) : rouge&lt;/li&gt;
+&lt;li&gt;hsl(120, 100%, 50%) : vert&lt;/li&gt;
+&lt;li&gt;hsl(240, 100%, 50%) : bleu&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;hsla()&lt;/code&gt; permet de définir un alpha de 0.0 (transparent) à 1.0 (complétement opaque).&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;La teinte&lt;/strong&gt;&lt;/em&gt; est un degré sur la roue chromatique de 0 à 360 :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;0 est rouge.&lt;/li&gt;
+&lt;li&gt;120 est vert.&lt;/li&gt;
+&lt;li&gt;240 est bleu.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;La saturation&lt;/strong&gt;&lt;/em&gt; est une valeur en pourcentage.
+0% signifie une nuance de gris et 100% est la pleine couleur.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;La luminosité&lt;/strong&gt;&lt;/em&gt; est également une valeur en pourcentage.
+0% est noir et 100% est blanc.&lt;/p&gt;
+&lt;p&gt;Généteur de couleur en HSL : &lt;a class=&#34;link&#34; href=&#34;https://www.w3schools.com/html/html_colors_hsl.asp&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.w3schools.com/html/html_colors_hsl.asp&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;la-couleur-de-préférence&#34;&gt;La couleur de préférence&lt;/h3&gt;
+&lt;p&gt;Le mot clé &lt;code&gt;currentcolor&lt;/code&gt; fait référence à la valeur de la propriété color d&amp;rsquo;un élément.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;color&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;blue&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;/* Blue text color */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;border&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;px&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;solid&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;currentcolor&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;/* Blue border color */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;La couleur dela bordure sera de la même couleur que la couleur du texte.&lt;/p&gt;
+&lt;h3 id=&#34;liens-externes&#34;&gt;Liens externes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Color picker : &lt;a class=&#34;link&#34; href=&#34;https://www.w3schools.com/colors/colors_picker.asp&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.w3schools.com/colors/colors_picker.asp&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Générateur de couleur : &lt;a class=&#34;link&#34; href=&#34;https://coolors.co&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://coolors.co&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;La théorie des couleurs :
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://zenuacademie.com/design/theorie-des-couleurs/theorie-des-couleurs-principes/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://zenuacademie.com/design/theorie-des-couleurs/theorie-des-couleurs-principes/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://fr.99designs.be/blog/conseils-design/la-theorie-des-couleurs/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://fr.99designs.be/blog/conseils-design/la-theorie-des-couleurs/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;altèrer-le-texte&#34;&gt;Altèrer le texte&lt;/h2&gt;
+&lt;p&gt;//todo&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Histoire d&#39;internet</title>
+        <link>https://demo.stack.jimmycai.com/histoire-dinternet/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://demo.stack.jimmycai.com/histoire-dinternet/</guid>
+        <description>&lt;h2 id=&#34;histoire-dinternet&#34;&gt;Histoire d&amp;rsquo;internet&lt;/h2&gt;
+&lt;p&gt;Dans les années 1960, les chercheurs gouvernementaux cherchent à partager des informations. Avant l&amp;rsquo;arrivée d&amp;rsquo;internet, il devait se rendre sur le site de l&amp;rsquo;ordinateur, ou faire envoyer des bandes informatiques magnétiques via le système postal conventionnel.&lt;/p&gt;
+&lt;p&gt;La défense américaine ont décidé de créer un moyen de diffuser l&amp;rsquo;information durant la guerre froide. Cela a finalement conduit à la création de l&amp;rsquo;ARPANET (Advanced Research Projects Agency Network), le réseau qui a finalement évolué pour devenir ce que nous connaissons maintenant sous le nom d&amp;rsquo;Internet.&lt;/p&gt;
+&lt;p&gt;Bien qu&amp;rsquo;un grand succès, ARPANET était limitée à certaines organisations universitaires et de recherche.&lt;/p&gt;
+&lt;p&gt;Le 1er janvier 1983 est considéré comme l&amp;rsquo;anniversaire officiel d&amp;rsquo;Internet. Avant cela, les différents réseaux informatiques n&amp;rsquo;avaient pas de moyen standard de communiquer entre eux. Un nouveau protocole de communication a été établi : Transfer Control Protocol/Internetwork Protocol (TCP/IP).&lt;/p&gt;
+&lt;p&gt;Cela a permis un protocole standard de communication. ARPANET et la défense américaine sont officiellement passés au standard TCP/IP en 1983, d&amp;rsquo;où la naissance d&amp;rsquo;Internet.&lt;/p&gt;
+&lt;h2 id=&#34;révolution-industrielle&#34;&gt;Révolution industrielle&lt;/h2&gt;
+&lt;p&gt;Internet joue un rôle majeur dans le développement de nos révolutions industrielles. Voici un petit récapitulatif :&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://demo.stack.jimmycai.com/histoire-dinternet/industries.png&#34;
+	width=&#34;1080&#34;
+	height=&#34;529&#34;
+	srcset=&#34;https://demo.stack.jimmycai.com/histoire-dinternet/industries_hu1e63270b6facbdb1fc3fa107ba9a998a_34485_480x0_resize_box_3.png 480w, https://demo.stack.jimmycai.com/histoire-dinternet/industries_hu1e63270b6facbdb1fc3fa107ba9a998a_34485_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Les révolutions industrielles&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;204&#34;
+		data-flex-basis=&#34;489px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;1er-révolution-industrielle&#34;&gt;1er révolution industrielle&lt;/h3&gt;
+&lt;p&gt;La machine à vapeur et le développement du charbon, la mécanisation et la vente de machines à coudre mécanisées ont amené de nouvelles industries, notamment l&amp;rsquo;industrie textile.&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;industrie métallurgique a encouragé la construction de ponts puis le développement des chemins de fer. Cela a facilité les échanges économiques, humains et matériels.&lt;/p&gt;
+&lt;h3 id=&#34;2éme-révolution-industrielle&#34;&gt;2éme révolution industrielle&lt;/h3&gt;
+&lt;p&gt;Le développement du pétrole et du gaz, l&amp;rsquo;invention de l&amp;rsquo;électricité et du moteur à combustion interne, ont permis d&amp;rsquo;adapter des matériaux comme l&amp;rsquo;acier et l&amp;rsquo;aluminium à d&amp;rsquo;autresindustries comme le secteur automobile et l&amp;rsquo;industrie aéronautique.
+Les moyens de communication ont été révolutionnés par les inventions successives du télégraphe et du téléphone.&lt;/p&gt;
+&lt;h3 id=&#34;3éme-révolution-industrielle&#34;&gt;3éme révolution industrielle&lt;/h3&gt;
+&lt;p&gt;L&amp;rsquo;informatique et l&amp;rsquo;électricité d&amp;rsquo;origine nucléaire ont inauguré l&amp;rsquo;électronique avec l&amp;rsquo;avènement des transistors et des microprocesseurs. De nouveaux matériaux révolutionnent les marchés et de nouvelles technologies.&lt;/p&gt;
+&lt;p&gt;La miniaturisation qui a ouvret la diffusion mondiale de nouveaux modes de transmission tels que la recherche spatiale et Internet. Sans oublier l&amp;rsquo;invention des automates et des robots.&lt;/p&gt;
+&lt;h3 id=&#34;4éme-révolution-industrielle&#34;&gt;4éme révolution industrielle&lt;/h3&gt;
+&lt;p&gt;C&amp;rsquo;est la numérisation de l’information et de l’interconnectivité des objets connectés.&lt;/p&gt;
+&lt;p&gt;L’intelligence artificielle, les voitures autonomes, l’impression 3D, la nanotechnologie ou l’information quantique.&lt;/p&gt;
+&lt;p&gt;Nous en sommes qu&amp;rsquo;au début de cette 4éme révolution industrielle&amp;hellip; Elle devrait transformerer tous nos systèmes de production, de management et de gouvernance.&lt;/p&gt;
+&lt;h2 id=&#34;de-nos-jours&#34;&gt;De nos jours&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;En Janvier 2022, on comptait environ 7,9 milliards d’habitants sur la planète.
+&lt;ul&gt;
+&lt;li&gt;67,1% de la population mondiale utilise un téléphone portable.&lt;/li&gt;
+&lt;li&gt;62,5% pour internet.&lt;/li&gt;
+&lt;li&gt;58,4% pour les réseaux sociaux.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;L&amp;rsquo;informatique et l&amp;rsquo;internet ont joué un rôle primordial dans les deux dernières révolutions industrielles.&lt;/p&gt;
+&lt;h2 id=&#34;le-bug-de-lan-2000&#34;&gt;Le bug de l&amp;rsquo;an 2000&lt;/h2&gt;
+&lt;p&gt;Le bug de l&amp;rsquo;an 2000, pouquoi ?&lt;/p&gt;
+&lt;p&gt;Lors de la conception des premiers systèmes informatiques, les ingénieurs et les programmeurs ont adopté une convention selon laquelle les dates ne sont indiquées que par les deux derniers chiffres : 72 pour 1972, 86 pour 1986, et ainsi de suite. 2000 correspond donc à 00, ce qui signifie en réalité 1900 pour les systèmes.&lt;/p&gt;
+&lt;p&gt;Bien que cela à fait beaucoup de bruit dans les média à l&amp;rsquo;époque, la plus part des systèmes avait été mis à jour bien avant le passage à l&amp;rsquo;an 2000.&lt;/p&gt;
+&lt;h2 id=&#34;le-bug-de-lan-2038&#34;&gt;Le bug de l&amp;rsquo;an 2038&lt;/h2&gt;
+&lt;p&gt;le 19 janvier 2038 à 3 heures 14 minutes et 7 secondes la capacité de stockage de date des ordinateurs 32bits sera à son tour saturée. Le problème concerne potentiellement tous les systèmes d&amp;rsquo;exploitation et les programmes qui utilisent une représentation des dates codée sur 32 bits.&lt;/p&gt;
+&lt;p&gt;2^31 -1, soit 2 147 483 647 secondes (01111111 11111111 11111111 11111111 en binaire), ce qui correspond au 19/01/2038 à 03:14:08 UTC.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>HTML</title>
+        <link>https://demo.stack.jimmycai.com/html/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://demo.stack.jimmycai.com/html/</guid>
+        <description>&lt;h2 id=&#34;définition&#34;&gt;Définition&lt;/h2&gt;
+&lt;p&gt;HTML (HyperText Markup Language) est un langage de structuration (balisage) qui est devenu de nos jours, incontournable et indispensable dans la programmation orienté WEB.&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;« hypertexte » désigne les liens qui relient les pages web entre elles, que ce soit au sein d&amp;rsquo;un même site web ou entre différents sites web. Les liens sont un aspect fondamental du Web.&lt;/p&gt;
+&lt;p&gt;En HTML, les balises sont insensibles à la casse et peuvent aussi bien être écrites en minuscules, en majuscules voire avec un mélange des deux.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;HTML 1.0 : Apparu début des années 90, conçu pour naviguer d’une page à l’autre.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;HTML 2.0 : Parution en 1995, l’arrivé de nouvelles balises (entêtes, titres, et support des images).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;HTML 3.0 / 3.2 :  1996, support des polices et de nouveaux formats et d’images. Introduction des applets JAVA et du Javascript.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;HTML 4.0 : 1998, amélioration des nouveautés précédentes, amélioration des tableaux, formulaires, etc.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;XHTML 1.0 :  Extensible HyperText Markup Language apparu en 2000 est une évolution plus stricte de l’HTML 4.0.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;La balise &lt;code&gt;&amp;lt;!DOCTYPE&amp;gt;&lt;/code&gt; obligatoire précise la syntaxe à utiliser.&lt;/li&gt;
+&lt;li&gt;Déclaration du namespace dans la balise &lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Les noms des balises et des attributs sont écrits en minuscules.&lt;/li&gt;
+&lt;li&gt;Toute balise ouvrante doit être fermée.&lt;/li&gt;
+&lt;li&gt;Les éléments HTML doivent être correctement imbriqués.&lt;/li&gt;
+&lt;li&gt;Les valeurs des attributs sont encadrées par des apostrophes ou des guillemets.&lt;/li&gt;
+&lt;li&gt;Chaque attribut doit avoir une valeur (pas d&amp;rsquo;attribut vide).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;HTML 5.0 : Première version officiel apparu en 2014.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;HTML 5.1 :  &lt;a class=&#34;link&#34; href=&#34;https://w3c.github.io/test-results/html51/implementation-report.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://w3c.github.io/test-results/html51/implementation-report.html&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;HTML 5.2 : &lt;a class=&#34;link&#34; href=&#34;https://w3c.github.io/test-results/html52/implementation-report.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://w3c.github.io/test-results/html52/implementation-report.html&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;HTML 5.3 : &lt;a class=&#34;link&#34; href=&#34;https://www.w3.org/TR/2021/NOTE-html53-20210128&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.w3.org/TR/2021/NOTE-html53-20210128&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;la-struture-dune-page&#34;&gt;La struture d&amp;rsquo;une page&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;cp&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;lang&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;en&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;charset&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;UTF-8&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Document&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;La déclaration &lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/code&gt; définit que ce document est un document HTML5.
+&lt;a class=&#34;link&#34; href=&#34;https://www.w3.org/QA/2002/04/valid-dtd-list.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.w3.org/QA/2002/04/valid-dtd-list.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;L&amp;rsquo;élément &lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt; est l&amp;rsquo;élément racine d&amp;rsquo;une page HTML.&lt;/li&gt;
+&lt;li&gt;L&amp;rsquo;élément &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; est l&amp;rsquo;en-tête qui contient des méta-informations sur la page HTML.&lt;/li&gt;
+&lt;li&gt;L&amp;rsquo;élément &lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt; spécifie un titre pour la page HTML (qui est affiché dans la barre de titre du navigateur ou dans l&amp;rsquo;onglet de la page).&lt;/li&gt;
+&lt;li&gt;L&amp;rsquo;élément &lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt; définit le corps du document et est un conteneur pour tous les contenus visibles, tels que les titres, les paragraphes, les images, les hyperliens, les tableaux, les listes, etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;quest-ce-quun-élément-html-&#34;&gt;Qu’est-ce qu’un élément HTML ?&lt;/h2&gt;
+&lt;p&gt;Il existe deux types d&amp;rsquo;élements HTML, la première est une pair de balise ouvrante et fermante tandis que l&amp;rsquo;autre ne possède qu&amp;rsquo;une seule balise car elle ne possède pas de contenu.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;mabalise&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; contenu de la balise &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;mabalise&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;mabalisesanscontenu&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://demo.stack.jimmycai.com/html/element.png&#34;
+	width=&#34;694&#34;
+	height=&#34;198&#34;
+	srcset=&#34;https://demo.stack.jimmycai.com/html/element_hu88592006a45fec30829b60ff622d2f12_7844_480x0_resize_box_3.png 480w, https://demo.stack.jimmycai.com/html/element_hu88592006a45fec30829b60ff622d2f12_7844_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;définition d&amp;rsquo;un élément html&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;350&#34;
+		data-flex-basis=&#34;841px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Par abus de langage, on peut confondre les termes « élément » et « balise » en utilisant le mot « balise » pour désigner un élément.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;les-atributs-dans-les-éléments&#34;&gt;Les atributs dans les éléments&lt;/h2&gt;
+&lt;p&gt;Les attributs HTML fournissent des informations supplémentaires sur les éléments HTML. Certains sont universelles et d&amp;rsquo;autres spécifiques à certains éléments.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;img&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;lien de l&amp;#39;image&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;alt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;description de l&amp;#39;image&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Tous les éléments HTML peuvent avoir des attributs.&lt;/li&gt;
+&lt;li&gt;Les attributs sont toujours spécifiés dans la balise de début.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;les-balises-sémantiques&#34;&gt;Les balises sémantiques&lt;/h2&gt;
+&lt;p&gt;Une balise sémantique est une balise qui donne une indication sur le contenu qu’elle entoure.&lt;/p&gt;
+&lt;h3 id=&#34;les-titres&#34;&gt;Les titres&lt;/h3&gt;
+&lt;p&gt;Ils existent 6 niveaux de titres en HTML.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;h1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Titre 1&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;h1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;h2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Titre 2&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;h2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;h3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Titre 3&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;h3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;h4&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Titre 4&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;h4&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;h5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Titre 5&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;h5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;h6&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Titre 6&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;h6&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://codesandbox.io/s/h1-h6-4ejqf6?file=/index.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://codesandbox.io/s/h1-h6-4ejqf6?file=/index.html&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;les-paragraphes&#34;&gt;Les paragraphes&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Ceci est un paragraphe.&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Il était une fois, &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;br&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; une histoire. &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;code&gt;&amp;lt;blockquote&amp;gt;&amp;lt;/blockquote&amp;gt;&lt;/code&gt; Définit une section qui est citée à partir d&amp;rsquo;une autre source.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;q&amp;gt;&amp;lt;/q&amp;gt;&lt;/code&gt; Permet de défnir une sitation.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;abbr&amp;gt;&amp;lt;/abbr&amp;gt;&lt;/code&gt; Permet de définir une abréviation ou un acronyme.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;address&amp;gt;&amp;lt;/address&amp;gt;&lt;/code&gt; Définit les coordonnées de l&amp;rsquo;auteur/propriétaire d&amp;rsquo;un document ou d&amp;rsquo;un article.&lt;/p&gt;
+&lt;p&gt;Les informations de contact peuvent être une adresse e-mail, une URL, une adresse physique, un numéro de téléphone, un identifiant de réseau social, etc.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;cite&amp;gt;&amp;lt;/cite&amp;gt;&lt;/code&gt; Tag définit le titre d&amp;rsquo;une œuvre créative (par exemple, un livre, un poème, une chanson, un film, une peinture, une sculpture, etc.).&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;bdo&amp;gt;&amp;lt;/bdo&amp;gt;&lt;/code&gt; Permets de définir dans quels sens le texte est affiché.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Exemple :&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;bdo&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;dir&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;rtl&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Cette ligne sera écrite de droite à gauche&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;bdo&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Rendu : &lt;bdo dir=&#34;rtl&#34;&gt; Cette ligne sera écrite de droite à gauche&lt;/bdo&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Bold text&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;strong&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Important text&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;strong&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Italic text&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;em&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Emphasized text&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;em&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;mark&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Marked text&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;mark&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;small&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Smaller text&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;small&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;del&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Deleted text&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;del&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;ins&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Inserted text&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;ins&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;sub&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Subscript text&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;sub&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;sup&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Superscript text &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;sup&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;les-tableaux&#34;&gt;Les tableaux&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;table&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;thead&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;tr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;th&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Person&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;th&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;th&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Age&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;th&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;tr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;thead&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;tbody&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;tr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;              &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;td&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Chris&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;td&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;              &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;td&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;38&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;td&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;tr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;           &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;tr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;              &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;td&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Dennis&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;td&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;              &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;td&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;45&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;td&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;tr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;           &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;tr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;              &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;td&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Sarah&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;td&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;              &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;td&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;29&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;td&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;tr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;tbody&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;table&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://codesandbox.io/s/table-ddw8rd?file=/index.html:319-741&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://codesandbox.io/s/table-ddw8rd?file=/index.html:319-741&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;les-listes&#34;&gt;Les listes&lt;/h3&gt;
+&lt;p&gt;&amp;ldquo;ol&amp;rdquo; pour &amp;ldquo;order list&amp;rdquo;, nous définitions alors une liste numéroté :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;ol&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;li&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Liste numéroté&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;li&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;ol&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&amp;ldquo;ul&amp;rdquo; pour unoder list, nous défnitions alors une liste à puces :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;ul&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;li&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Liste à puces&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;li&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;ul&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Combinaison de liste :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;ol&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;li&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Liste numéroté
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;ul&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;li&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;avec une liste à puces&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;li&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;ul&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;li&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;ol&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Exemple : &lt;a class=&#34;link&#34; href=&#34;https://codesandbox.io/s/listes-9w4z8j?file=/index.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://codesandbox.io/s/listes-9w4z8j?file=/index.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;les-balises-de-structure-de-page&#34;&gt;Les balises de structure de page&lt;/h2&gt;
+&lt;h3 id=&#34;la-balise-header&#34;&gt;La balise Header&lt;/h3&gt;
+&lt;p&gt;L&amp;rsquo;élément header représente un conteneur pour le contenu d&amp;rsquo;introduction ou un ensemble de liens de navigation.&lt;/p&gt;
+&lt;p&gt;Un élément header contient généralement :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;un ou plusieurs éléments d&amp;rsquo;en-tête (h1 - h6)&lt;/li&gt;
+&lt;li&gt;logo ou icône&lt;/li&gt;
+&lt;li&gt;informations sur l&amp;rsquo;auteur&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Remarque : Vous pouvez avoir plusieurs éléments header dans un document HTML. Cependant, il ne peut pas être placé dans un élément footer, address ou un autre élément header.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;article&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;header&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;h2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;La planète Terre&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;h2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Publié le mercredi &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;time&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;datetime&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;2017-10-04&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;4 octobre 2017&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;time&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; par Jeanne Smith&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;header&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Nous vivons sur une planète bleue et verte&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;href&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;https://example.com/the-planet-earth/&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Poursuivre la lecture…&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;article&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;la-balise-footer&#34;&gt;La balise footer&lt;/h3&gt;
+&lt;p&gt;La balise footer définit un pied de page pour un document ou une section.&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;élément footer contient généralement :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;informations sur l&amp;rsquo;auteur&lt;/li&gt;
+&lt;li&gt;Informations sur le droit d&amp;rsquo;auteur&lt;/li&gt;
+&lt;li&gt;Informations de contact&lt;/li&gt;
+&lt;li&gt;plan du site&lt;/li&gt;
+&lt;li&gt;retour en haut des liens&lt;/li&gt;
+&lt;li&gt;documents connexes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Vous pouvez avoir plusieurs éléments footer dans un même document.
+Les informations sur l&amp;rsquo;autrice ou l&amp;rsquo;auteur doivent être placées dans un élément address et incluses dans l&amp;rsquo;élément footer.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;footer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Author: Hege Refsnes&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;href&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;mailto:hege@example.com&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;hege@example.com&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;footer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;la-balise-nav&#34;&gt;La balise nav&lt;/h3&gt;
+&lt;p&gt;La balise &lt;code&gt;&amp;lt;nav&amp;gt;&lt;/code&gt; définit un ensemble de liens de navigation.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Notez que tous les liens d&amp;rsquo;un document ne doivent PAS être à l&amp;rsquo;intérieur d&amp;rsquo;un élément nav. L&amp;rsquo;élément est destiné uniquement aux principaux blocs de liens de navigation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Un document peut avoir plusieurs éléments nav, par exemple, un pour la navigation sur le site et un pour la navigation intra-page. aria-labelledby peut être utilisé dans ce cas pour promouvoir l&amp;rsquo;accessibilité.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Les navigateurs, tels que les lecteurs d&amp;rsquo;écran pour les utilisateurs handicapés, peuvent utiliser cet élément pour déterminer s&amp;rsquo;il faut omettre le rendu initial de ce contenu.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Généralement, l&amp;rsquo;élément footer contient souvent une liste de liens qui n&amp;rsquo;ont pas besoin d&amp;rsquo;être dans un élément nav.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;nav&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;href&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;/html&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;HTML&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; |
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;href&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;/css&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;CSS&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; |
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;href&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;/js&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;JavaScript&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; |
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;href&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;/python&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Python&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;nav&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;la-balise-div&#34;&gt;La balise div&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;div&amp;gt;&amp;lt;/div&amp;gt;&lt;/code&gt; div pour division est un conteneur de contenu.&lt;/p&gt;
+&lt;h3 id=&#34;la-balise-section&#34;&gt;La balise section&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;section&amp;gt;&amp;lt;/section&amp;gt;&lt;/code&gt;Conteneur à utiliser pour un regroupement de thématique. Une section commence généralement par un titre.&lt;/p&gt;
+&lt;h3 id=&#34;la-balise-article&#34;&gt;La balise article&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;article&amp;gt;&amp;lt;/article&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Un article doit avoir du sens en lui-même et il doit pouvoir être diffusé indépendamment du reste du site.&lt;/p&gt;
+&lt;p&gt;Sources potentielles pour l&amp;rsquo;élément &lt;code&gt;&amp;lt;article&amp;gt;&lt;/code&gt; :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Message du forum&lt;/li&gt;
+&lt;li&gt;Article de blog&lt;/li&gt;
+&lt;li&gt;Nouvelles histoires&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Recommandation :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Chaque article autonome, qui n&amp;rsquo;est pas imbriqué dans un autre élément article, devrait être identifié typiquement, en incluant un élément de titre h1 à h6.&lt;/li&gt;
+&lt;li&gt;Quand un élément article est imbriqué dans un autre, l&amp;rsquo;élément contenu représente un article relatif à l&amp;rsquo;élément contenant. Par exemple, les commentaires d&amp;rsquo;une parution de blog peuvent être un élément article inclus dans l&amp;rsquo;article représentant la parution en elle-même.&lt;/li&gt;
+&lt;li&gt;Des informations à propos de l&amp;rsquo;auteur d&amp;rsquo;un élément article peuvent être fournies au travers de l&amp;rsquo;élément address, mais cela ne s&amp;rsquo;applique pas aux éléments article imbriqués.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://codesandbox.io/s/article-3v4n2r?file=/index.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://codesandbox.io/s/article-3v4n2r?file=/index.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;les-formulaires&#34;&gt;Les formulaires&lt;/h2&gt;
+&lt;p&gt;//todo&lt;/p&gt;
+&lt;h2 id=&#34;réferences&#34;&gt;Réferences&lt;/h2&gt;
+&lt;p&gt;Liste des éléments HTML : &lt;a class=&#34;link&#34; href=&#34;https://www.w3schools.com/tags/default.asp&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.w3schools.com/tags/default.asp&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Introduction</title>
+        <link>https://demo.stack.jimmycai.com/introduction/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://demo.stack.jimmycai.com/introduction/</guid>
+        <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Ce cours présente les fondamentaux du fonctionnement d’un site web : les méthodes qui permettent à un site d’être envoyé jusqu’à la machine de l’utilisateur et son affichage (interprétation) dans un navigateur.&lt;/p&gt;
+&lt;p&gt;Il explique ensuite la séparation du contenu et de la forme, un principe qui sera de nouveau abordé dans les “design patterns” (vu précédemment dans OMB et qui sera développé dans LPB).&lt;/p&gt;
+&lt;p&gt;Il s’attache à voir extensivement le HTML et le CSS.&lt;/p&gt;
+&lt;p&gt;Ses objectifs sont de :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Connaître les concepts et technologies permettant l’envoi sur le réseau d’un site web et son affichage :&lt;/li&gt;
+&lt;li&gt;L’architecture client-serveur ;&lt;/li&gt;
+&lt;li&gt;Les protocoles de communication réseau ;&lt;/li&gt;
+&lt;li&gt;Les moteurs de rendu d’une page web.&lt;/li&gt;
+&lt;li&gt;Comprendre la séparation entre contenu (HTML) et forme (CSS).&lt;/li&gt;
+&lt;li&gt;Comprendre et programmer en langage HTML.&lt;/li&gt;
+&lt;li&gt;Comprendre et programmer en langage CSS.&lt;/li&gt;
+&lt;li&gt;Connaître les librairies courantes :
+&lt;ul&gt;
+&lt;li&gt;Exploiter Bootstrap.&lt;/li&gt;
+&lt;li&gt;Exploiter SCSS.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Connaître et appliquer les standards du web.&lt;/li&gt;
+&lt;li&gt;Survoler les autres langages de balisage (web).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Évaluations :&lt;/strong&gt; L’évaluation se fera au moyen d’exercices pratiques journaliers.&lt;/p&gt;
+&lt;h2 id=&#34;me-contacter&#34;&gt;Me contacter&lt;/h2&gt;
+&lt;p&gt;Via mon adresse email ou sur la plateforme itslearing.&lt;/p&gt;
+&lt;h2 id=&#34;les-logiciels&#34;&gt;Les logiciels&lt;/h2&gt;
+&lt;img src=&#34;vscode.png&#34; alt=&#34;drawing&#34; width=&#34;50&#34; &gt;
+Nous allons utiliser essentiellement Visual Studio Code (VS Code) disponible sur https://code.visualstudio.com  
+Il est gratuit, open-source et multi-plateforme.
+&lt;p&gt;Extensions :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Live preview de Microsoft : &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;img src=&#34;https://nodejs.org/static/images/logo.svg&#34; alt=&#34;drawing&#34; width=&#34;70&#34; &gt;
+Utilisation du gestionnaire de paquet NPM via NodeJS.
+&lt;https://nodejs.org/en/&gt;
+</description>
+        </item>
+        <item>
+        <title>Les protocoles</title>
+        <link>https://demo.stack.jimmycai.com/les-protocoles/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://demo.stack.jimmycai.com/les-protocoles/</guid>
+        <description>&lt;h2 id=&#34;le-modèle-osi-et-le-protocole-tcpip&#34;&gt;Le modèle OSI et le protocole TCP/IP&lt;/h2&gt;
+&lt;p&gt;Le protocole TCP/IP (Transmission Control Protocol / Internet Protocol) est basé sur le modèle OSI (Open Systems Interconnection).&lt;/p&gt;
+&lt;p&gt;le modèle OSI a été conçu dans les années 1970 au sein de l&amp;rsquo;ISO (International Organization for Standardization). le modèle permet une communication standard en réseau de tous les systèmes informatiques. Il permet de décrire couche par couche les fonctionnalités nécéssaires à la communication.&lt;/p&gt;
+&lt;h3 id=&#34;définition-des-couches&#34;&gt;Définition des couches&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;La couche 1
+&lt;ul&gt;
+&lt;li&gt;Nom : Physique.&lt;/li&gt;
+&lt;li&gt;Rôle : Permet d&amp;rsquo;ofrrir un support de transmission pour la communication.&lt;/li&gt;
+&lt;li&gt;Matériel associé : Le hub (ou concentrateur en français).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;La couche 2
+&lt;ul&gt;
+&lt;li&gt;Nom : Liaison de données.&lt;/li&gt;
+&lt;li&gt;Rôle : Connecter les machines entre elles sur un réseau local.&lt;/li&gt;
+&lt;li&gt;Matériel associé : Switch, hub.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;La couche 3
+&lt;ul&gt;
+&lt;li&gt;Nom : Réseau.&lt;/li&gt;
+&lt;li&gt;Rôle : Interconnecte les réseaux entre eux.&lt;/li&gt;
+&lt;li&gt;Matériel associé : Le routeur.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;La couche 4
+&lt;ul&gt;
+&lt;li&gt;Nom : Transport.&lt;/li&gt;
+&lt;li&gt;Rôle : Gère les connnexions applicative.&lt;/li&gt;
+&lt;li&gt;Matériel associé : /&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;La couche 5
+&lt;ul&gt;
+&lt;li&gt;Nom : Session.&lt;/li&gt;
+&lt;li&gt;Rôle : Gére la synchronisation des échanges et les « transactions ». Elle gère aussi l&amp;rsquo;ouverture et la fermeture de session.&lt;/li&gt;
+&lt;li&gt;Matériel associé : /&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;La couche 6
+&lt;ul&gt;
+&lt;li&gt;Nom : Présentation.&lt;/li&gt;
+&lt;li&gt;Rôle : Elle est chargée du codage des données applicatives, précisément de la conversion entre données manipulées au niveau applicatif et chaînes d&amp;rsquo;octets effectivement transmises.&lt;/li&gt;
+&lt;li&gt;Matériel associé : /&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;La couche 7
+&lt;ul&gt;
+&lt;li&gt;Nom : Présentation&lt;/li&gt;
+&lt;li&gt;Rôle : /&lt;/li&gt;
+&lt;li&gt;Matériel associé : Le proxy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;⚠️ Le modèle OSI est un modèle théorique sur lequel le modèle TCP/IP se repose. Dans son implémentation, il n&amp;rsquo;utilise pas les couches 5 et 6. Dans la pratique, le procole TCP/IP n&amp;rsquo;utilise donc que 5 couches.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;modèle-par-architecure&#34;&gt;Modèle par architecure&lt;/h3&gt;
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th rowspan=&#34; 4&#34;&gt;
+        Couches Hautes
+      &lt;/th&gt;
+      &lt;td rowspan=&#34;3&#34;&gt;
+        Données
+      &lt;/td&gt;
+      &lt;td&gt;7&lt;/td&gt;
+      &lt;td&gt;Application&lt;/td&gt;
+      &lt;td&gt;Point d&#39;accès aux services réseau.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;6&lt;/td&gt;
+      &lt;td&gt;Présentation&lt;/td&gt;
+      &lt;td&gt;Gère le chiffrement et le déchiffrement des données, convertit les données machine en données exploitables par d&#39;autre machine.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;Session&lt;/td&gt;
+      &lt;td&gt;Communication Interhost, gère les sessions entre les différentes applications &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Segment&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;Transport&lt;/td&gt;
+      &lt;td&gt;Connexion de bout en bout, connectabilité, contrôle des flux et notion de port (protocole TCP et UDP)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td rowspan=&#34;3&#34;&gt;Couches matérielles&lt;/td&gt;
+      &lt;td&gt;Paquet&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Réseau&lt;/td&gt;
+      &lt;td&gt;Détermine le parcours des données et l&#39;adressage logique (IP)&lt;/td&gt;
+    &lt;/tr&gt;
+     &lt;tr&gt;
+      &lt;td&gt;Trame&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Liaison de données&lt;/td&gt;
+      &lt;td&gt;Adressage physique&lt;/td&gt;
+    &lt;/tr&gt;
+     &lt;tr&gt;
+      &lt;td&gt;Bit&lt;/td&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Physique&lt;/td&gt;
+      &lt;td&gt;Transmission des signaux sous forme numérique ou analogique&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;les-rêgles-dor-du-modèle-osi&#34;&gt;Les rêgles d&amp;rsquo;or du modèle OSI&lt;/h3&gt;
+&lt;p&gt;Le modèle OSI étant une norme, il est nécessaire d&amp;rsquo;indiquer correctement comment travailler pour mettre en place des réseaux. Cela permet de garantir une compabilité.&lt;/p&gt;
+&lt;p&gt;Chaque couche à un rôle spécifique, aucun autre couche s&amp;rsquo;occupera de faire le travail d&amp;rsquo;une autre.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Chaque couche est indépendante.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Quand un ouvre un navigateur et qu&amp;rsquo;on ouvre une page internet, on utilise sans le savoir le modèle OSI. La couche 7 application (le navigateur) s&amp;rsquo;adresse aux couches réseau pour traiter la demande de l&amp;rsquo;utilisateur.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Chaque couche ne peut communiquer qu&amp;rsquo;avec une couche adjacente.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Quand on envoie des données sur le réseau, on va de la couche 7 à la couche 1 :&lt;/p&gt;
+&lt;p&gt;application =&amp;gt; présentation =&amp;gt; session =&amp;gt; transport =&amp;gt; réseau =&amp;gt; liaison de données =&amp;gt; physique&lt;/p&gt;
+&lt;p&gt;Quand on reçois des données provenant du réseau, on va de la couche 1 à la couche 7 :&lt;/p&gt;
+&lt;p&gt;physique =&amp;gt; liaison de données =&amp;gt; réseau =&amp;gt; transport =&amp;gt; session =&amp;gt; présenation =&amp;gt; application.&lt;/p&gt;
+&lt;h3 id=&#34;en-résumé&#34;&gt;En résumé&lt;/h3&gt;
+&lt;p&gt;Le protocole par vulgarisation : &lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=26jazyc7VNk&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.youtube.com/watch?v=26jazyc7VNk&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Le modèle OSI est une norme précisant comment les machines doivent communiquer entre elles.&lt;/li&gt;
+&lt;li&gt;C&amp;rsquo;est un modèle théorique, celui réellement utilisé est le protocole TCP/IP.&lt;/li&gt;
+&lt;li&gt;Il possède 7 couches.&lt;/li&gt;
+&lt;li&gt;Chaque couche à un rôle spécifique.&lt;/li&gt;
+&lt;li&gt;Les couches 1 à 4 sont les couches réseaux. Elles offrent le servie de communication à la couche applicative.&lt;/li&gt;
+&lt;li&gt;Chaque couche est indépendante des autres.&lt;/li&gt;
+&lt;li&gt;Les couches ne peuvent communiquer qu&amp;rsquo;avec les couches adjacentes.&lt;/li&gt;
+&lt;li&gt;Quand on envoie des données, on va de la couche 7 à 1 et inversement quand on en reçois.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;envie-daller-plus-loin-&#34;&gt;Envie d&amp;rsquo;aller plus loin ?&lt;/h3&gt;
+&lt;p&gt;Je vous conseile le livre &amp;ldquo;Apprenez le fonctionnement des réseaux TCP/IP&amp;rdquo; du site du zéro ou openclassroom.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://demo.stack.jimmycai.com/les-protocoles/livretcpip.jpg&#34;
+	width=&#34;290&#34;
+	height=&#34;410&#34;
+	srcset=&#34;https://demo.stack.jimmycai.com/les-protocoles/livretcpip_hu6422eb350cd85a00a4c0200359b2d86c_18211_480x0_resize_q75_box.jpg 480w, https://demo.stack.jimmycai.com/les-protocoles/livretcpip_hu6422eb350cd85a00a4c0200359b2d86c_18211_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Livre tcp/ip de openclasroom&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;70&#34;
+		data-flex-basis=&#34;169px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Search</title>
+        <link>https://demo.stack.jimmycai.com/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://demo.stack.jimmycai.com/search/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>

@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="fr-BE" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Introduction le CSS (Cascading Style Sheets) ou Feuilles de style en cascade en français est un language pour mettre en forme des pages internet.
+Il permet de décrire comment les éléments doivent être affichés à l&amp;rsquo;écran.
+Il existe plusieurs moyens d&amp;rsquo;importer du CSS dans une page :
+Via un fichier externe. Via un lien externe. Directement dans la page via l&amp;rsquo;en-tête. Directement dans la page via les éléments HTML. Le terme en &amp;lsquo;cascade&amp;rsquo; signifie qu&amp;rsquo;on peut définir plusieurs fois des règles pour un même élement.'>
+<title>CSS</title>
+
+<link rel='canonical' href='https://demo.stack.jimmycai.com/css/'>
+
+<link rel="stylesheet" href="/scss/style.min.8191399262444ab68b72a18c97392f5349be20a1615d77445be51e974c144cff.css"><meta property='og:title' content='CSS'>
+<meta property='og:description' content='Introduction le CSS (Cascading Style Sheets) ou Feuilles de style en cascade en français est un language pour mettre en forme des pages internet.
+Il permet de décrire comment les éléments doivent être affichés à l&amp;rsquo;écran.
+Il existe plusieurs moyens d&amp;rsquo;importer du CSS dans une page :
+Via un fichier externe. Via un lien externe. Directement dans la page via l&amp;rsquo;en-tête. Directement dans la page via les éléments HTML. Le terme en &amp;lsquo;cascade&amp;rsquo; signifie qu&amp;rsquo;on peut définir plusieurs fois des règles pour un même élement.'>
+<meta property='og:url' content='https://demo.stack.jimmycai.com/css/'>
+<meta property='og:site_name' content='LBA'>
+<meta property='og:type' content='article'><meta property='article:section' content='Page' />
+<meta name="twitter:title" content="CSS">
+<meta name="twitter:description" content="Introduction le CSS (Cascading Style Sheets) ou Feuilles de style en cascade en français est un language pour mettre en forme des pages internet.
+Il permet de décrire comment les éléments doivent être affichés à l&amp;rsquo;écran.
+Il existe plusieurs moyens d&amp;rsquo;importer du CSS dans une page :
+Via un fichier externe. Via un lien externe. Directement dans la page via l&amp;rsquo;en-tête. Directement dans la page via les éléments HTML. Le terme en &amp;lsquo;cascade&amp;rsquo; signifie qu&amp;rsquo;on peut définir plusieurs fois des règles pour un même élement.">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Afficher le menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_huda2458f72ce188392d75c5d51cd8e24e_373_300x0_resize_box_3.png" width="149"
+                            height="149" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🚀</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">LBA</a></h1>
+            <h2 class="site-description">Cours de Language de balisage</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Accueil</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/introduction/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-braces" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M7 4a2 2 0 0 0 -2 2v3a2 3 0 0 1 -2 3a2 3 0 0 1 2 3v3a2 2 0 0 0 2 2" />
+  <path d="M17 4a2 2 0 0 1 2 2v3a2 3 0 0 0 2 3a2 3 0 0 0 -2 3v3a2 2 0 0 1 -2 2" />
+</svg>
+                
+                <span>Introduction</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/histoire-dinternet/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-history" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <polyline points="12 8 12 12 14 14" />
+  <path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" />
+</svg>
+                
+                <span>Histoire d&#39;internet</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/les-protocoles/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shield" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M12 3a12 12 0 0 0 8.5 3a12 12 0 0 1 -8.5 15a12 12 0 0 1 -8.5 -15a12 12 0 0 0 8.5 -3" />
+</svg>
+                
+                <span>Les protocoles</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/html/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-html5" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+  <path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+</svg>
+                
+                <span>HTML</span>
+            </a>
+        </li>
+        
+        
+
+        <li  class='current' >
+            <a href='/css/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-css3" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+  <path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+</svg>
+                
+                <span>CSS</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Mode sombre</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table des matières</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#les-couleurs-en-css">Les couleurs en CSS</a>
+      <ol>
+        <li><a href="#hexadecimal">Hexadecimal</a></li>
+        <li><a href="#rgb">RGB</a></li>
+        <li><a href="#hsl">HSL</a></li>
+        <li><a href="#la-couleur-de-préférence">La couleur de préférence</a></li>
+        <li><a href="#liens-externes">Liens externes</a></li>
+      </ol>
+    </li>
+    <li><a href="#altèrer-le-texte">Altèrer le texte</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/css/">CSS</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    4 minutes de lecture
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="introduction">Introduction</h2>
+<p>le CSS (Cascading Style Sheets) ou Feuilles de style en cascade en français est un language pour mettre en forme des pages internet.</p>
+<p>Il permet de décrire comment les éléments doivent être affichés à l&rsquo;écran.</p>
+<p>Il existe plusieurs moyens d&rsquo;importer du CSS dans une page :</p>
+<ul>
+<li>Via un fichier externe.</li>
+<li>Via un lien externe.</li>
+<li>Directement dans la page via l&rsquo;en-tête.</li>
+<li>Directement dans la page via les éléments HTML.</li>
+</ul>
+<p>Le terme en &lsquo;cascade&rsquo; signifie qu&rsquo;on peut définir plusieurs fois des règles pour un même élement. Il y a une notion de priorité pour savoir quel règle est prioritaire par apport à une autre quand il existe plusieurs définitions.</p>
+<ul>
+<li>
+<p>En premier, le CSS va appliquer les règles dans les fichiers ou lien externe suivant la priorité définie dans le <code>&lt;head&gt;</code> (du haut vers le bas).</p>
+</li>
+<li>
+<p>En 2éme, il va importer le style défini dans le <code>&lt;head&gt;</code> via la balise <code>&lt;style&gt;</code>.</p>
+</li>
+<li>
+<p>En 3éme, il va appliquer le CSS qui est défini directement dans la balise HTML.</p>
+</li>
+</ul>
+<p>Cette règle de lecture est en réalité pas correct, le CSS va être lu du haut vers le bas.</p>
+<p>Il est donc possible que les règles dans la balise <code>&lt;style&gt;</code> défnie dans <code>&lt;head&gt;</code> soit écrasé si des ressources exeternes est définies <em><strong>après</strong></em>. Néanmoins, l&rsquo;idée est de partir des règles génériques au plus spécifique. Il n&rsquo;y a donc aucun logique a ne pas importer les fichiers externes en premier.</p>
+<p>Quand une règle est défini plusieurs fois, alors cette règle est appliqué pour savoir quel est la plus prioritaire :</p>
+<ul>
+<li>Règle de balise</li>
+<li>Règle de class</li>
+<li>Règle d&rsquo;id</li>
+<li>Règle dans la balise</li>
+</ul>
+<p>Exemple de priorité en CSS :
+<a class="link" href="https://codesandbox.io/s/css-priorite-remhet?file=/index.html"  target="_blank" rel="noopener"
+    >https://codesandbox.io/s/css-priorite-remhet?file=/index.html</a></p>
+<h2 id="les-couleurs-en-css">Les couleurs en CSS</h2>
+<p>Les couleurs sont spécifiées à l&rsquo;aide de noms de couleurs prédéfinis ou de valeurs en format RVB, HEX, HSL, RGBA, HSLA.</p>
+<p>De manière général, les couleurs sont définie en HEX et RGB(A) dans les librairies CSS.</p>
+<p>Il existe 140 couleurs de base en CSS : <a class="link" href="https://www.w3schools.com/cssref/css_colors.php"  target="_blank" rel="noopener"
+    >https://www.w3schools.com/cssref/css_colors.php</a></p>
+<p>Exemple pour le texte en rouge dans les paragraphes :</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl">    <span class="nt">p</span> <span class="p">{</span> <span class="k">color</span><span class="p">:</span> <span class="kc">red</span><span class="p">;</span> <span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="hexadecimal">Hexadecimal</h3>
+<p>les couleurs sont définies en base 16:</p>
+<ul>
+<li>#000000 : noir</li>
+<li>#ffffff : blanc</li>
+<li>#ff0000 : rouge</li>
+<li>#00ff00 : vert</li>
+<li>#0000ff : bleu</li>
+<li>#ffff00 : jaune</li>
+</ul>
+<p>Exemple pour le texte en rouge dans les paragraphes :</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl">    <span class="nt">p</span> <span class="p">{</span> <span class="k">color</span><span class="p">:</span> <span class="mh">#ff0000</span><span class="p">;</span> <span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Il est possible de définir une transparence en hexadecimal.</p>
+<h3 id="rgb">RGB</h3>
+<p>On peut également définir les couleurs en RGB (Red Green Blue) de 0 à 255 ou de 0 à 100%.</p>
+<ul>
+<li>rgb(0, 0, 0) : noir</li>
+<li>rgb(255, 255, 255) : blanc</li>
+<li>rgb(255, 0, 0) : rouge</li>
+<li>rgb(0, 255, 0) : vert</li>
+<li>rgb(0, 0, 255) : bleu</li>
+</ul>
+<p><code>rgba()</code> permet de définir un alpha de 0.0 (transparent) à 1.0 (complétement opaque).</p>
+<p>Exemple pour le texte en noir dans les paragraphes :</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl">    <span class="nt">p</span> <span class="p">{</span> <span class="k">color</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="hsl">HSL</h3>
+<p>HSL pour Hue, Saturation and Lightness (Teinte, Saturation et Luminosité)</p>
+<ul>
+<li>hsl(0, 0%, 0%) : noir</li>
+<li>hsl(100, 100%, 100%) : blanc</li>
+<li>hsl(0, 100%, 50%) : rouge</li>
+<li>hsl(120, 100%, 50%) : vert</li>
+<li>hsl(240, 100%, 50%) : bleu</li>
+</ul>
+<p><code>hsla()</code> permet de définir un alpha de 0.0 (transparent) à 1.0 (complétement opaque).</p>
+<p><em><strong>La teinte</strong></em> est un degré sur la roue chromatique de 0 à 360 :</p>
+<ul>
+<li>0 est rouge.</li>
+<li>120 est vert.</li>
+<li>240 est bleu.</li>
+</ul>
+<p><em><strong>La saturation</strong></em> est une valeur en pourcentage.
+0% signifie une nuance de gris et 100% est la pleine couleur.</p>
+<p><em><strong>La luminosité</strong></em> est également une valeur en pourcentage.
+0% est noir et 100% est blanc.</p>
+<p>Généteur de couleur en HSL : <a class="link" href="https://www.w3schools.com/html/html_colors_hsl.asp"  target="_blank" rel="noopener"
+    >https://www.w3schools.com/html/html_colors_hsl.asp</a></p>
+<h3 id="la-couleur-de-préférence">La couleur de préférence</h3>
+<p>Le mot clé <code>currentcolor</code> fait référence à la valeur de la propriété color d&rsquo;un élément.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">p</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">color</span><span class="p">:</span> <span class="kc">blue</span><span class="p">;</span> <span class="c">/* Blue text color */</span>
+</span></span><span class="line"><span class="cl">  <span class="k">border</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span> <span class="kc">solid</span> <span class="n">currentcolor</span><span class="p">;</span> <span class="c">/* Blue border color */</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>La couleur dela bordure sera de la même couleur que la couleur du texte.</p>
+<h3 id="liens-externes">Liens externes</h3>
+<ul>
+<li>Color picker : <a class="link" href="https://www.w3schools.com/colors/colors_picker.asp"  target="_blank" rel="noopener"
+    >https://www.w3schools.com/colors/colors_picker.asp</a></li>
+<li>Générateur de couleur : <a class="link" href="https://coolors.co"  target="_blank" rel="noopener"
+    >https://coolors.co</a></li>
+<li>La théorie des couleurs :
+<ul>
+<li><a class="link" href="https://zenuacademie.com/design/theorie-des-couleurs/theorie-des-couleurs-principes/"  target="_blank" rel="noopener"
+    >https://zenuacademie.com/design/theorie-des-couleurs/theorie-des-couleurs-principes/</a></li>
+<li><a class="link" href="https://fr.99designs.be/blog/conseils-design/la-theorie-des-couleurs/"  target="_blank" rel="noopener"
+    >https://fr.99designs.be/blog/conseils-design/la-theorie-des-couleurs/</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="altèrer-le-texte">Altèrer le texte</h2>
+<p>//todo</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2022 LBA
+    </section>
+    
+    <section class="powerby">
+        Généré avec <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Thème <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> conçu par <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

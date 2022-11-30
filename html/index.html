@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="fr-BE" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Définition HTML (HyperText Markup Language) est un langage de structuration (balisage) qui est devenu de nos jours, incontournable et indispensable dans la programmation orienté WEB.
+L&amp;rsquo;« hypertexte » désigne les liens qui relient les pages web entre elles, que ce soit au sein d&amp;rsquo;un même site web ou entre différents sites web. Les liens sont un aspect fondamental du Web.
+En HTML, les balises sont insensibles à la casse et peuvent aussi bien être écrites en minuscules, en majuscules voire avec un mélange des deux.'>
+<title>HTML</title>
+
+<link rel='canonical' href='https://demo.stack.jimmycai.com/html/'>
+
+<link rel="stylesheet" href="/scss/style.min.8191399262444ab68b72a18c97392f5349be20a1615d77445be51e974c144cff.css"><meta property='og:title' content='HTML'>
+<meta property='og:description' content='Définition HTML (HyperText Markup Language) est un langage de structuration (balisage) qui est devenu de nos jours, incontournable et indispensable dans la programmation orienté WEB.
+L&amp;rsquo;« hypertexte » désigne les liens qui relient les pages web entre elles, que ce soit au sein d&amp;rsquo;un même site web ou entre différents sites web. Les liens sont un aspect fondamental du Web.
+En HTML, les balises sont insensibles à la casse et peuvent aussi bien être écrites en minuscules, en majuscules voire avec un mélange des deux.'>
+<meta property='og:url' content='https://demo.stack.jimmycai.com/html/'>
+<meta property='og:site_name' content='LBA'>
+<meta property='og:type' content='article'><meta property='article:section' content='Page' />
+<meta name="twitter:title" content="HTML">
+<meta name="twitter:description" content="Définition HTML (HyperText Markup Language) est un langage de structuration (balisage) qui est devenu de nos jours, incontournable et indispensable dans la programmation orienté WEB.
+L&amp;rsquo;« hypertexte » désigne les liens qui relient les pages web entre elles, que ce soit au sein d&amp;rsquo;un même site web ou entre différents sites web. Les liens sont un aspect fondamental du Web.
+En HTML, les balises sont insensibles à la casse et peuvent aussi bien être écrites en minuscules, en majuscules voire avec un mélange des deux.">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Afficher le menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_huda2458f72ce188392d75c5d51cd8e24e_373_300x0_resize_box_3.png" width="149"
+                            height="149" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🚀</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">LBA</a></h1>
+            <h2 class="site-description">Cours de Language de balisage</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Accueil</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/introduction/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-braces" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M7 4a2 2 0 0 0 -2 2v3a2 3 0 0 1 -2 3a2 3 0 0 1 2 3v3a2 2 0 0 0 2 2" />
+  <path d="M17 4a2 2 0 0 1 2 2v3a2 3 0 0 0 2 3a2 3 0 0 0 -2 3v3a2 2 0 0 1 -2 2" />
+</svg>
+                
+                <span>Introduction</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/histoire-dinternet/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-history" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <polyline points="12 8 12 12 14 14" />
+  <path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" />
+</svg>
+                
+                <span>Histoire d&#39;internet</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/les-protocoles/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shield" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M12 3a12 12 0 0 0 8.5 3a12 12 0 0 1 -8.5 15a12 12 0 0 1 -8.5 -15a12 12 0 0 0 8.5 -3" />
+</svg>
+                
+                <span>Les protocoles</span>
+            </a>
+        </li>
+        
+        
+
+        <li  class='current' >
+            <a href='/html/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-html5" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+  <path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+</svg>
+                
+                <span>HTML</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/css/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-css3" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#9e9e9e" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
+  <path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
+</svg>
+                
+                <span>CSS</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>Mode sombre</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table des matières</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#définition">Définition</a></li>
+    <li><a href="#la-struture-dune-page">La struture d&rsquo;une page</a></li>
+    <li><a href="#quest-ce-quun-élément-html-">Qu’est-ce qu’un élément HTML ?</a></li>
+    <li><a href="#les-atributs-dans-les-éléments">Les atributs dans les éléments</a></li>
+    <li><a href="#les-balises-sémantiques">Les balises sémantiques</a>
+      <ol>
+        <li><a href="#les-titres">Les titres</a></li>
+        <li><a href="#les-paragraphes">Les paragraphes</a></li>
+        <li><a href="#les-tableaux">Les tableaux</a></li>
+        <li><a href="#les-listes">Les listes</a></li>
+      </ol>
+    </li>
+    <li><a href="#les-balises-de-structure-de-page">Les balises de structure de page</a>
+      <ol>
+        <li><a href="#la-balise-header">La balise Header</a></li>
+        <li><a href="#la-balise-footer">La balise footer</a></li>
+        <li><a href="#la-balise-nav">La balise nav</a></li>
+        <li><a href="#la-balise-div">La balise div</a></li>
+        <li><a href="#la-balise-section">La balise section</a></li>
+        <li><a href="#la-balise-article">La balise article</a></li>
+      </ol>
+    </li>
+    <li><a href="#les-formulaires">Les formulaires</a></li>
+    <li><a href="#réferences">Réferences</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/html/">HTML</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    7 minutes de lecture
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="définition">Définition</h2>
+<p>HTML (HyperText Markup Language) est un langage de structuration (balisage) qui est devenu de nos jours, incontournable et indispensable dans la programmation orienté WEB.</p>
+<p>L&rsquo;« hypertexte » désigne les liens qui relient les pages web entre elles, que ce soit au sein d&rsquo;un même site web ou entre différents sites web. Les liens sont un aspect fondamental du Web.</p>
+<p>En HTML, les balises sont insensibles à la casse et peuvent aussi bien être écrites en minuscules, en majuscules voire avec un mélange des deux.</p>
+<ul>
+<li>
+<p>HTML 1.0 : Apparu début des années 90, conçu pour naviguer d’une page à l’autre.</p>
+</li>
+<li>
+<p>HTML 2.0 : Parution en 1995, l’arrivé de nouvelles balises (entêtes, titres, et support des images).</p>
+</li>
+<li>
+<p>HTML 3.0 / 3.2 :  1996, support des polices et de nouveaux formats et d’images. Introduction des applets JAVA et du Javascript.</p>
+</li>
+<li>
+<p>HTML 4.0 : 1998, amélioration des nouveautés précédentes, amélioration des tableaux, formulaires, etc.</p>
+</li>
+<li>
+<p>XHTML 1.0 :  Extensible HyperText Markup Language apparu en 2000 est une évolution plus stricte de l’HTML 4.0.</p>
+<ul>
+<li>La balise <code>&lt;!DOCTYPE&gt;</code> obligatoire précise la syntaxe à utiliser.</li>
+<li>Déclaration du namespace dans la balise <code>&lt;html&gt;</code>.</li>
+<li>Les noms des balises et des attributs sont écrits en minuscules.</li>
+<li>Toute balise ouvrante doit être fermée.</li>
+<li>Les éléments HTML doivent être correctement imbriqués.</li>
+<li>Les valeurs des attributs sont encadrées par des apostrophes ou des guillemets.</li>
+<li>Chaque attribut doit avoir une valeur (pas d&rsquo;attribut vide).</li>
+</ul>
+</li>
+<li>
+<p>HTML 5.0 : Première version officiel apparu en 2014.</p>
+</li>
+<li>
+<p>HTML 5.1 :  <a class="link" href="https://w3c.github.io/test-results/html51/implementation-report.html"  target="_blank" rel="noopener"
+    >https://w3c.github.io/test-results/html51/implementation-report.html</a></p>
+</li>
+<li>
+<p>HTML 5.2 : <a class="link" href="https://w3c.github.io/test-results/html52/implementation-report.html"  target="_blank" rel="noopener"
+    >https://w3c.github.io/test-results/html52/implementation-report.html</a></p>
+</li>
+<li>
+<p>HTML 5.3 : <a class="link" href="https://www.w3.org/TR/2021/NOTE-html53-20210128"  target="_blank" rel="noopener"
+    >https://www.w3.org/TR/2021/NOTE-html53-20210128</a></p>
+</li>
+</ul>
+<h2 id="la-struture-dune-page">La struture d&rsquo;une page</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">    <span class="cp">&lt;!DOCTYPE html&gt;</span> 
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Document<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>  
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span> 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>La déclaration <code>&lt;!DOCTYPE html&gt;</code> définit que ce document est un document HTML5.
+<a class="link" href="https://www.w3.org/QA/2002/04/valid-dtd-list.html"  target="_blank" rel="noopener"
+    >https://www.w3.org/QA/2002/04/valid-dtd-list.html</a></li>
+<li>L&rsquo;élément <code>&lt;html&gt;</code> est l&rsquo;élément racine d&rsquo;une page HTML.</li>
+<li>L&rsquo;élément <code>&lt;head&gt;</code> est l&rsquo;en-tête qui contient des méta-informations sur la page HTML.</li>
+<li>L&rsquo;élément <code>&lt;title&gt;</code> spécifie un titre pour la page HTML (qui est affiché dans la barre de titre du navigateur ou dans l&rsquo;onglet de la page).</li>
+<li>L&rsquo;élément <code>&lt;body&gt;</code> définit le corps du document et est un conteneur pour tous les contenus visibles, tels que les titres, les paragraphes, les images, les hyperliens, les tableaux, les listes, etc.</li>
+</ul>
+<h2 id="quest-ce-quun-élément-html-">Qu’est-ce qu’un élément HTML ?</h2>
+<p>Il existe deux types d&rsquo;élements HTML, la première est une pair de balise ouvrante et fermante tandis que l&rsquo;autre ne possède qu&rsquo;une seule balise car elle ne possède pas de contenu.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">mabalise</span><span class="p">&gt;</span> contenu de la balise <span class="p">&lt;/</span><span class="nt">mabalise</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">mabalisesanscontenu</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="/html/element.png"
+	width="694"
+	height="198"
+	srcset="/html/element_hu88592006a45fec30829b60ff622d2f12_7844_480x0_resize_box_3.png 480w, /html/element_hu88592006a45fec30829b60ff622d2f12_7844_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="définition d&rsquo;un élément html"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="350"
+		data-flex-basis="841px"
+	
+></p>
+<blockquote>
+<p>Par abus de langage, on peut confondre les termes « élément » et « balise » en utilisant le mot « balise » pour désigner un élément.</p>
+</blockquote>
+<h2 id="les-atributs-dans-les-éléments">Les atributs dans les éléments</h2>
+<p>Les attributs HTML fournissent des informations supplémentaires sur les éléments HTML. Certains sont universelles et d&rsquo;autres spécifiques à certains éléments.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;lien de l&#39;image&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;description de l&#39;image&#34;</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>Tous les éléments HTML peuvent avoir des attributs.</li>
+<li>Les attributs sont toujours spécifiés dans la balise de début.</li>
+</ul>
+<h2 id="les-balises-sémantiques">Les balises sémantiques</h2>
+<p>Une balise sémantique est une balise qui donne une indication sur le contenu qu’elle entoure.</p>
+<h3 id="les-titres">Les titres</h3>
+<p>Ils existent 6 niveaux de titres en HTML.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Titre 1<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Titre 2<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Titre 3<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span>Titre 4<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h5</span><span class="p">&gt;</span>Titre 5<span class="p">&lt;/</span><span class="nt">h5</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h6</span><span class="p">&gt;</span>Titre 6<span class="p">&lt;/</span><span class="nt">h6</span><span class="p">&gt;</span> 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><a class="link" href="https://codesandbox.io/s/h1-h6-4ejqf6?file=/index.html"  target="_blank" rel="noopener"
+    >https://codesandbox.io/s/h1-h6-4ejqf6?file=/index.html</a></p>
+<h3 id="les-paragraphes">Les paragraphes</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ceci est un paragraphe.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Il était une fois, <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span> une histoire. <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span> 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>&lt;blockquote&gt;&lt;/blockquote&gt;</code> Définit une section qui est citée à partir d&rsquo;une autre source.</p>
+<p><code>&lt;q&gt;&lt;/q&gt;</code> Permet de défnir une sitation.</p>
+<p><code>&lt;abbr&gt;&lt;/abbr&gt;</code> Permet de définir une abréviation ou un acronyme.</p>
+<p><code>&lt;address&gt;&lt;/address&gt;</code> Définit les coordonnées de l&rsquo;auteur/propriétaire d&rsquo;un document ou d&rsquo;un article.</p>
+<p>Les informations de contact peuvent être une adresse e-mail, une URL, une adresse physique, un numéro de téléphone, un identifiant de réseau social, etc.</p>
+<p><code>&lt;cite&gt;&lt;/cite&gt;</code> Tag définit le titre d&rsquo;une œuvre créative (par exemple, un livre, un poème, une chanson, un film, une peinture, une sculpture, etc.).</p>
+<p><code>&lt;bdo&gt;&lt;/bdo&gt;</code> Permets de définir dans quels sens le texte est affiché.</p>
+<p><em><strong>Exemple :</strong></em></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">bdo</span> <span class="na">dir</span><span class="o">=</span><span class="s">&#34;rtl&#34;</span><span class="p">&gt;</span>Cette ligne sera écrite de droite à gauche<span class="p">&lt;/</span><span class="nt">bdo</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Rendu : <bdo dir="rtl"> Cette ligne sera écrite de droite à gauche</bdo></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">b</span><span class="p">&gt;</span>Bold text<span class="p">&lt;/</span><span class="nt">b</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>Important text<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">i</span><span class="p">&gt;</span>Italic text<span class="p">&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">em</span><span class="p">&gt;</span>Emphasized text<span class="p">&lt;/</span><span class="nt">em</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">mark</span><span class="p">&gt;</span>Marked text<span class="p">&lt;/</span><span class="nt">mark</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">small</span><span class="p">&gt;</span>Smaller text<span class="p">&lt;/</span><span class="nt">small</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">del</span><span class="p">&gt;</span>Deleted text<span class="p">&lt;/</span><span class="nt">del</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">ins</span><span class="p">&gt;</span>Inserted text<span class="p">&lt;/</span><span class="nt">ins</span><span class="p">&gt;</span> 
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">sub</span><span class="p">&gt;</span>Subscript text<span class="p">&lt;/</span><span class="nt">sub</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">sup</span><span class="p">&gt;</span>Superscript text <span class="p">&lt;/</span><span class="nt">sup</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="les-tableaux">Les tableaux</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">table</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">thead</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">         <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Person<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Age<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">         <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">thead</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">tbody</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">              <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Chris<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">              <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>38<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">           <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">              <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Dennis<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">              <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>45<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">           <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">              <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Sarah<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">              <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>29<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">tbody</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><a class="link" href="https://codesandbox.io/s/table-ddw8rd?file=/index.html:319-741"  target="_blank" rel="noopener"
+    >https://codesandbox.io/s/table-ddw8rd?file=/index.html:319-741</a></p>
+<h3 id="les-listes">Les listes</h3>
+<p>&ldquo;ol&rdquo; pour &ldquo;order list&rdquo;, nous définitions alors une liste numéroté :</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Liste numéroté<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>&ldquo;ul&rdquo; pour unoder list, nous défnitions alors une liste à puces :</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Liste à puces<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Combinaison de liste :</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Liste numéroté
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>avec une liste à puces<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Exemple : <a class="link" href="https://codesandbox.io/s/listes-9w4z8j?file=/index.html"  target="_blank" rel="noopener"
+    >https://codesandbox.io/s/listes-9w4z8j?file=/index.html</a></p>
+<h2 id="les-balises-de-structure-de-page">Les balises de structure de page</h2>
+<h3 id="la-balise-header">La balise Header</h3>
+<p>L&rsquo;élément header représente un conteneur pour le contenu d&rsquo;introduction ou un ensemble de liens de navigation.</p>
+<p>Un élément header contient généralement :</p>
+<ul>
+<li>un ou plusieurs éléments d&rsquo;en-tête (h1 - h6)</li>
+<li>logo ou icône</li>
+<li>informations sur l&rsquo;auteur</li>
+</ul>
+<p>Remarque : Vous pouvez avoir plusieurs éléments header dans un document HTML. Cependant, il ne peut pas être placé dans un élément footer, address ou un autre élément header.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>La planète Terre<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Publié le mercredi <span class="p">&lt;</span><span class="nt">time</span> <span class="na">datetime</span><span class="o">=</span><span class="s">&#34;2017-10-04&#34;</span><span class="p">&gt;</span>4 octobre 2017<span class="p">&lt;/</span><span class="nt">time</span><span class="p">&gt;</span> par Jeanne Smith<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Nous vivons sur une planète bleue et verte<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://example.com/the-planet-earth/&#34;</span><span class="p">&gt;</span>Poursuivre la lecture…<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="la-balise-footer">La balise footer</h3>
+<p>La balise footer définit un pied de page pour un document ou une section.</p>
+<p>L&rsquo;élément footer contient généralement :</p>
+<ul>
+<li>informations sur l&rsquo;auteur</li>
+<li>Informations sur le droit d&rsquo;auteur</li>
+<li>Informations de contact</li>
+<li>plan du site</li>
+<li>retour en haut des liens</li>
+<li>documents connexes</li>
+</ul>
+<p>Vous pouvez avoir plusieurs éléments footer dans un même document.
+Les informations sur l&rsquo;autrice ou l&rsquo;auteur doivent être placées dans un élément address et incluses dans l&rsquo;élément footer.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"> <span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Author: Hege Refsnes<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;mailto:hege@example.com&#34;</span><span class="p">&gt;</span>hege@example.com<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span> 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="la-balise-nav">La balise nav</h3>
+<p>La balise <code>&lt;nav&gt;</code> définit un ensemble de liens de navigation.</p>
+<ul>
+<li>
+<p>Notez que tous les liens d&rsquo;un document ne doivent PAS être à l&rsquo;intérieur d&rsquo;un élément nav. L&rsquo;élément est destiné uniquement aux principaux blocs de liens de navigation.</p>
+</li>
+<li>
+<p>Un document peut avoir plusieurs éléments nav, par exemple, un pour la navigation sur le site et un pour la navigation intra-page. aria-labelledby peut être utilisé dans ce cas pour promouvoir l&rsquo;accessibilité.</p>
+</li>
+<li>
+<p>Les navigateurs, tels que les lecteurs d&rsquo;écran pour les utilisateurs handicapés, peuvent utiliser cet élément pour déterminer s&rsquo;il faut omettre le rendu initial de ce contenu.</p>
+</li>
+<li>
+<p>Généralement, l&rsquo;élément footer contient souvent une liste de liens qui n&rsquo;ont pas besoin d&rsquo;être dans un élément nav.</p>
+</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"> <span class="p">&lt;</span><span class="nt">nav</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/html&#34;</span><span class="p">&gt;</span>HTML<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> |
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/css&#34;</span><span class="p">&gt;</span>CSS<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> |
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/js&#34;</span><span class="p">&gt;</span>JavaScript<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> |
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;/python&#34;</span><span class="p">&gt;</span>Python<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span> 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="la-balise-div">La balise div</h3>
+<p><code>&lt;div&gt;&lt;/div&gt;</code> div pour division est un conteneur de contenu.</p>
+<h3 id="la-balise-section">La balise section</h3>
+<p><code>&lt;section&gt;&lt;/section&gt;</code>Conteneur à utiliser pour un regroupement de thématique. Une section commence généralement par un titre.</p>
+<h3 id="la-balise-article">La balise article</h3>
+<p><code>&lt;article&gt;&lt;/article&gt;</code></p>
+<p>Un article doit avoir du sens en lui-même et il doit pouvoir être diffusé indépendamment du reste du site.</p>
+<p>Sources potentielles pour l&rsquo;élément <code>&lt;article&gt;</code> :</p>
+<ul>
+<li>Message du forum</li>
+<li>Article de blog</li>
+<li>Nouvelles histoires</li>
+</ul>
+<p>Recommandation :</p>
+<ul>
+<li>Chaque article autonome, qui n&rsquo;est pas imbriqué dans un autre élément article, devrait être identifié typiquement, en incluant un élément de titre h1 à h6.</li>
+<li>Quand un élément article est imbriqué dans un autre, l&rsquo;élément contenu représente un article relatif à l&rsquo;élément contenant. Par exemple, les commentaires d&rsquo;une parution de blog peuvent être un élément article inclus dans l&rsquo;article représentant la parution en elle-même.</li>
+<li>Des informations à propos de l&rsquo;auteur d&rsquo;un élément article peuvent être fournies au travers de l&rsquo;élément address, mais cela ne s&rsquo;applique pas aux éléments article imbriqués.</li>
+</ul>
+<p><a class="link" href="https://codesandbox.io/s/article-3v4n2r?file=/index.html"  target="_blank" rel="noopener"
+    >https://codesandbox.io/s/article-3v4n2r?file=/index.html</a></p>
+<h2 id="les-formulaires">Les formulaires</h2>
+<p>//todo</p>
+<h2 id="réferences">Réferences</h2>
+<p>Liste des éléments HTML : <a class="link" href="https://www.w3schools.com/tags/default.asp"  target="_blank" rel="noopener"
+    >https://www.w3schools.com/tags/default.asp</a></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2022 LBA
+    </section>
+    
+    <section class="powerby">
+        Généré avec <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Thème <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> conçu par <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
