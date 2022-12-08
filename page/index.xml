@@ -21,27 +21,56 @@
 &lt;li&gt;Directement dans la page via l&amp;rsquo;en-tête.&lt;/li&gt;
 &lt;li&gt;Directement dans la page via les éléments HTML.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Le terme en &amp;lsquo;cascade&amp;rsquo; signifie qu&amp;rsquo;on peut définir plusieurs fois des règles pour un même élement. Il y a une notion de priorité pour savoir quel règle est prioritaire par apport à une autre quand il existe plusieurs définitions.&lt;/p&gt;
+&lt;p&gt;Le terme en &amp;lsquo;cascade&amp;rsquo; signifie qu&amp;rsquo;on peut définir plusieurs fois des propriétés pour un même élement HTML. Il y a une notion de priorité pour savoir quel propriété est prioritaire par apport à une autre quand il existe plusieurs définitions.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;En premier, le CSS va appliquer les règles dans les fichiers ou lien externe suivant la priorité définie dans le &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; (du haut vers le bas).&lt;/p&gt;
+&lt;p&gt;En premier, le CSS va appliquer les propriétés dans les fichiers ou lien externe suivant la priorité définie dans le &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; (du haut vers le bas).&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;En 2éme, il va importer le style défini dans le &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; via la balise &lt;code&gt;&amp;lt;style&amp;gt;&lt;/code&gt;.&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;En 3éme, il va appliquer le CSS qui est défini directement dans la balise HTML.&lt;/p&gt;
-&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;link&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;rel&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;stylesheet&amp;#34;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;href&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;lt;path&amp;gt;.css&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;En 3éme, il va appliquer le CSS qui est défini directement dans la balise HTML.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Cette règle de lecture est en réalité pas correct, le CSS va être lu du haut vers le bas.&lt;/p&gt;
-&lt;p&gt;Il est donc possible que les règles dans la balise &lt;code&gt;&amp;lt;style&amp;gt;&lt;/code&gt; défnie dans &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; soit écrasé si des ressources exeternes est définies &lt;em&gt;&lt;strong&gt;après&lt;/strong&gt;&lt;/em&gt;. Néanmoins, l&amp;rsquo;idée est de partir des règles génériques au plus spécifique. Il n&amp;rsquo;y a donc aucun logique a ne pas importer les fichiers externes en premier.&lt;/p&gt;
-&lt;p&gt;Quand une règle est défini plusieurs fois, alors cette règle est appliqué pour savoir quel est la plus prioritaire :&lt;/p&gt;
+&lt;p&gt;Il est donc possible que les sélécteurs dans la balise &lt;code&gt;&amp;lt;style&amp;gt;&lt;/code&gt; défnie dans &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; soit écrasé si des ressources exeternes est définies &lt;em&gt;&lt;strong&gt;après&lt;/strong&gt;&lt;/em&gt;. Néanmoins, l&amp;rsquo;idée est de partir des règles génériques au plus spécifique. Il n&amp;rsquo;y a donc aucun logique a ne pas importer les fichiers externes en premier.&lt;/p&gt;
+&lt;p&gt;Quand une propriété est défini plusieurs fois dans un élément HTML, alors cette règle est appliqué pour savoir quel est la plus prioritaire :&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Règle de balise&lt;/li&gt;
-&lt;li&gt;Règle de class&lt;/li&gt;
-&lt;li&gt;Règle d&amp;rsquo;id&lt;/li&gt;
-&lt;li&gt;Règle dans la balise&lt;/li&gt;
+&lt;li&gt;Propriété dans les selecteur de balise&lt;/li&gt;
+&lt;li&gt;Propriété dans les selecteur de class&lt;/li&gt;
+&lt;li&gt;Propriété dans les selecteur d&amp;rsquo;id&lt;/li&gt;
+&lt;li&gt;Propriété dans la balise.&lt;/li&gt;
+&lt;li&gt;Des combinaisons des précédents.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;Exemple de sélécteur&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;sélecteur&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;propriété1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;valeur1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;propriété2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;valeur2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;propriété3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;valeur3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;Quand un navigateur n&amp;rsquo;est pas compatible, il ignore simplement la règle.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;Exemple de priorité en CSS :
 &lt;a class=&#34;link&#34; href=&#34;https://codesandbox.io/s/css-priorite-remhet?file=/index.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://codesandbox.io/s/css-priorite-remhet?file=/index.html&lt;/a&gt;&lt;/p&gt;
@@ -152,8 +181,280 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;les-unités-de-mesure-en-css&#34;&gt;Les unités de mesure en CSS&lt;/h2&gt;
+&lt;p&gt;Il est possible de définir plusieurs unités différentes pour exprimer une longueur.&lt;/p&gt;
+&lt;h3 id=&#34;les-unités-de-mesures-absolue&#34;&gt;Les unités de mesures absolue&lt;/h3&gt;
+&lt;p&gt;Les unités de longueur absolue sont fixes et une longueur exprimée dans l&amp;rsquo;une d&amp;rsquo;entre elles apparaîtra exactement comme défini.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;cm&lt;/td&gt;
+&lt;td&gt;centimeters&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;mm&lt;/td&gt;
+&lt;td&gt;millimeters&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;in&lt;/td&gt;
+&lt;td&gt;inch (1in = 96px = 2.54cm)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;px*&lt;/td&gt;
+&lt;td&gt;pixels (1px = 1/96th of 1in)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;pt&lt;/td&gt;
+&lt;td&gt;points (1pt = 1/72 de 1 in)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;pc&lt;/td&gt;
+&lt;td&gt;picas (1pc = 12 pt)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;(*) Les pixels (px) sont relatifs à l&amp;rsquo;appareil de visualisation.&lt;br&gt; Pour les appareils à faible résolution, 1px correspond à un pixel (point) de l&amp;rsquo;appareil de l&amp;rsquo;affichage.
+&lt;br&gt; Les imprimantes et les écrans haute résolution. 1px implique plusieurs pixels de périphérique.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;les-unités-de-mesure-relative&#34;&gt;Les unités de mesure relative&lt;/h3&gt;
+&lt;p&gt;Les unités de longueur relative permet de définir une longueur dite relative. Les unités relative évoluent entre différents supports de rendu.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;em&lt;/td&gt;
+&lt;td&gt;Relatif à la taille de la police de l&amp;rsquo;élément (2 em signifie 2 fois la taille de la police actuelle).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ex&lt;/td&gt;
+&lt;td&gt;Par rapport à la hauteur x de la police actuelle&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ch&lt;/td&gt;
+&lt;td&gt;Par rapport à la largeur du &amp;ldquo;0&amp;rdquo; (zéro)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;rem&lt;/td&gt;
+&lt;td&gt;Relatif à la taille de police de l&amp;rsquo;élément root&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;vw&lt;/td&gt;
+&lt;td&gt;Par rapport à 1 % de la largeur de la fenêtre d&amp;rsquo;affichage*&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;vh&lt;/td&gt;
+&lt;td&gt;Par rapport à 1% de la hauteur du viewport*&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;vmin&lt;/td&gt;
+&lt;td&gt;Par rapport à 1 % de la plus petite dimension de la fenêtre d&amp;rsquo;affichage*&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;vmax&lt;/td&gt;
+&lt;td&gt;Par rapport à 1 % de la plus grande dimension de la fenêtre d&amp;rsquo;affichage*&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;%&lt;/td&gt;
+&lt;td&gt;Relatif à l&amp;rsquo;élément parent&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;(*) Viewport = La taille de la fenêtre du navigateur.
+Si la fenêtre a une largeur de 50 cm, 1vw = 0,5 cm.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;les-marges-margin-et-padding&#34;&gt;Les marges (margin et padding)&lt;/h2&gt;
+&lt;p&gt;Un élément HTML possède :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Une taille&lt;/li&gt;
+&lt;li&gt;Une marge intérieure (padding)&lt;/li&gt;
+&lt;li&gt;Une bordure&lt;/li&gt;
+&lt;li&gt;Une marge extérieure (margin)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://demo.stack.jimmycai.com/css/element-html-model.png&#34;
+	width=&#34;321&#34;
+	height=&#34;223&#34;
+	srcset=&#34;https://demo.stack.jimmycai.com/css/element-html-model_hu1dfe341d7b300b18f4cc6245ddf31927_10334_480x0_resize_box_3.png 480w, https://demo.stack.jimmycai.com/css/element-html-model_hu1dfe341d7b300b18f4cc6245ddf31927_10334_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;le layout d&amp;rsquo;un élément HTML&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;143&#34;
+		data-flex-basis=&#34;345px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;padding&#34;&gt;Padding&lt;/h3&gt;
+&lt;p&gt;les marges intérieures (padding) permettent d&amp;rsquo;ajouter des marges à l&amp;rsquo;intérieur de l&amp;rsquo;élément HTML autour de son contenu.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://codesandbox.io/s/padding-example-xcb8fo?file=/index.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://codesandbox.io/s/padding-example-xcb8fo?file=/index.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Il existe les propriétés :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;padding-top&lt;/li&gt;
+&lt;li&gt;padding-right&lt;/li&gt;
+&lt;li&gt;padding-bottom&lt;/li&gt;
+&lt;li&gt;padding-left&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ou juste la propriété &amp;ldquo;padding&amp;rdquo; qui permet de définir chaque côté :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;nt&#34;&gt;sélecteur&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;padding&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;top&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;right&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;bottom&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;left&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Néanmoins, il est possible de ne pas définir chaque côté.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;nt&#34;&gt;sélecteur&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;padding&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;px&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Permet de définir 10 pixels de chaque côté.&lt;/p&gt;
+&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;nt&#34;&gt;sélecteur&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;padding&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;px&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;px&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Permet de définir 10 pixels en haut et en bas et 20 pixels à gauche et à droite.&lt;/p&gt;
+&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;nt&#34;&gt;sélecteur&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;padding&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;px&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;px&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;30&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;px&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Permet de définir 10 pixels en haut, 20 pixels à gauche et à droite et 30 pixels en bas.&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Il existe un moyen mnémotechnique de retenir l&amp;rsquo;ordre des valeurs :&lt;br&gt; Il faut penser à une horloge et au sens de celle-ci.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;12h =&amp;gt; top&lt;/li&gt;
+&lt;li&gt;3h =&amp;gt; right&lt;/li&gt;
+&lt;li&gt;6h =&amp;gt; bottom&lt;/li&gt;
+&lt;li&gt;9h =&amp;gt; left&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;margin&#34;&gt;Margin&lt;/h3&gt;
+&lt;p&gt;les marges extérieures (margin) permettent d&amp;rsquo;ajouter des marges à l&amp;rsquo;éxtérieur de l&amp;rsquo;élément HTML.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://codesandbox.io/s/margin-example-pfj15r?file=/index.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://codesandbox.io/s/margin-example-pfj15r?file=/index.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Il existe les propriétés :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;margin-top&lt;/li&gt;
+&lt;li&gt;margin-right&lt;/li&gt;
+&lt;li&gt;margin-bottom&lt;/li&gt;
+&lt;li&gt;margin-left&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ou juste la propriété &amp;ldquo;margin&amp;rdquo; qui permet de définir chaque côté :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;nt&#34;&gt;sélecteur&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;margin&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;top&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;right&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;bottom&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;left&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Néanmoins, il est possible de ne pas définir chaque côté.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;nt&#34;&gt;sélecteur&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;margin&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;px&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Permet de définir 10 pixels de chaque côté.&lt;/p&gt;
+&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;nt&#34;&gt;sélecteur&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;margin&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;px&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;px&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Permet de définir 10 pixels en haut et en bas et 20 pixels à gauche et à droite.&lt;/p&gt;
+&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;nt&#34;&gt;sélecteur&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;margin&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;px&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;px&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;30&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;px&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Permet de définir 10 pixels en haut, 20 pixels à gauche et à droite et 30 pixels en bas.&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Il existe un moyen mnémotechnique de retenir l&amp;rsquo;ordre des valeurs :&lt;br&gt; Il faut penser à une horloge et au sens de celle-ci.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;12h =&amp;gt; top&lt;/li&gt;
+&lt;li&gt;3h =&amp;gt; right&lt;/li&gt;
+&lt;li&gt;6h =&amp;gt; bottom&lt;/li&gt;
+&lt;li&gt;9h =&amp;gt; left&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;altèrer-le-texte&#34;&gt;Altèrer le texte&lt;/h2&gt;
-&lt;p&gt;//todo&lt;/p&gt;
+&lt;h3 id=&#34;définir-une-typographie&#34;&gt;Définir une typographie&lt;/h3&gt;
+&lt;h4 id=&#34;importer-une-typographie&#34;&gt;Importer une typographie&lt;/h4&gt;
+&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;
+&lt;h3 id=&#34;background--color&#34;&gt;Background : Color&lt;/h3&gt;
+&lt;h3 id=&#34;background--image&#34;&gt;Background : Image&lt;/h3&gt;
 </description>
         </item>
         <item>
@@ -682,8 +983,8 @@ Les informations sur l&amp;rsquo;autrice ou l&amp;rsquo;auteur doivent être pla
 &lt;p&gt;Via mon adresse email ou sur la plateforme itslearing.&lt;/p&gt;
 &lt;h2 id=&#34;les-logiciels&#34;&gt;Les logiciels&lt;/h2&gt;
 &lt;img src=&#34;vscode.png&#34; alt=&#34;drawing&#34; width=&#34;50&#34; &gt;
-Nous allons utiliser essentiellement Visual Studio Code (VS Code) disponible sur https://code.visualstudio.com  
-Il est gratuit, open-source et multi-plateforme.
+Nous allons utiliser essentiellement Visual Studio Code (VS Code) disponible sur &lt;a href=&#34;https://code.visualstudio.com&#34;&gt;https://code.visualstudio.com/&lt;a&gt;.
+&lt;p&gt;Il est gratuit, open-source et multi-plateforme.&lt;/p&gt;
 &lt;p&gt;Extensions :&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Live preview de Microsoft : &lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -691,7 +992,22 @@ Il est gratuit, open-source et multi-plateforme.
 &lt;/ul&gt;
 &lt;img src=&#34;https://nodejs.org/static/images/logo.svg&#34; alt=&#34;drawing&#34; width=&#34;70&#34; &gt;
 Utilisation du gestionnaire de paquet NPM via NodeJS.
-&lt;https://nodejs.org/en/&gt;
+&lt;a href=&#34;https://nodejs.org/en&#34;&gt;https://nodejs.org/en&lt;a&gt;
+&lt;h3 id=&#34;racourcis-clavier&#34;&gt;Racourcis clavier&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://demo.stack.jimmycai.com/introduction/shortcut.jpg&#34;
+	width=&#34;1405&#34;
+	height=&#34;1418&#34;
+	srcset=&#34;https://demo.stack.jimmycai.com/introduction/shortcut_hu9f4f7f39cc2956f580564ead06546bdf_178727_480x0_resize_q75_box.jpg 480w, https://demo.stack.jimmycai.com/introduction/shortcut_hu9f4f7f39cc2956f580564ead06546bdf_178727_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Les raccourcis clavier essentiels&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;99&#34;
+		data-flex-basis=&#34;237px&#34;
+	
+&gt;&lt;/p&gt;
 </description>
         </item>
         <item>

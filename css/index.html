@@ -4,7 +4,7 @@
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Introduction le CSS (Cascading Style Sheets) ou Feuilles de style en cascade en français est un language pour mettre en forme des pages internet.
 Il permet de décrire comment les éléments doivent être affichés à l&amp;rsquo;écran.
 Il existe plusieurs moyens d&amp;rsquo;importer du CSS dans une page :
-Via un fichier externe. Via un lien externe. Directement dans la page via l&amp;rsquo;en-tête. Directement dans la page via les éléments HTML. Le terme en &amp;lsquo;cascade&amp;rsquo; signifie qu&amp;rsquo;on peut définir plusieurs fois des règles pour un même élement.'>
+Via un fichier externe. Via un lien externe. Directement dans la page via l&amp;rsquo;en-tête. Directement dans la page via les éléments HTML. Le terme en &amp;lsquo;cascade&amp;rsquo; signifie qu&amp;rsquo;on peut définir plusieurs fois des propriétés pour un même élement HTML.'>
 <title>CSS</title>
 
 <link rel='canonical' href='https://demo.stack.jimmycai.com/css/'>
@@ -13,7 +13,7 @@ Via un fichier externe. Via un lien externe. Directement dans la page via l&amp;
 <meta property='og:description' content='Introduction le CSS (Cascading Style Sheets) ou Feuilles de style en cascade en français est un language pour mettre en forme des pages internet.
 Il permet de décrire comment les éléments doivent être affichés à l&amp;rsquo;écran.
 Il existe plusieurs moyens d&amp;rsquo;importer du CSS dans une page :
-Via un fichier externe. Via un lien externe. Directement dans la page via l&amp;rsquo;en-tête. Directement dans la page via les éléments HTML. Le terme en &amp;lsquo;cascade&amp;rsquo; signifie qu&amp;rsquo;on peut définir plusieurs fois des règles pour un même élement.'>
+Via un fichier externe. Via un lien externe. Directement dans la page via l&amp;rsquo;en-tête. Directement dans la page via les éléments HTML. Le terme en &amp;lsquo;cascade&amp;rsquo; signifie qu&amp;rsquo;on peut définir plusieurs fois des propriétés pour un même élement HTML.'>
 <meta property='og:url' content='https://demo.stack.jimmycai.com/css/'>
 <meta property='og:site_name' content='LBA'>
 <meta property='og:type' content='article'><meta property='article:section' content='Page' />
@@ -21,7 +21,7 @@ Via un fichier externe. Via un lien externe. Directement dans la page via l&amp;
 <meta name="twitter:description" content="Introduction le CSS (Cascading Style Sheets) ou Feuilles de style en cascade en français est un language pour mettre en forme des pages internet.
 Il permet de décrire comment les éléments doivent être affichés à l&amp;rsquo;écran.
 Il existe plusieurs moyens d&amp;rsquo;importer du CSS dans une page :
-Via un fichier externe. Via un lien externe. Directement dans la page via l&amp;rsquo;en-tête. Directement dans la page via les éléments HTML. Le terme en &amp;lsquo;cascade&amp;rsquo; signifie qu&amp;rsquo;on peut définir plusieurs fois des règles pour un même élement.">
+Via un fichier externe. Via un lien externe. Directement dans la page via l&amp;rsquo;en-tête. Directement dans la page via les éléments HTML. Le terme en &amp;lsquo;cascade&amp;rsquo; signifie qu&amp;rsquo;on peut définir plusieurs fois des propriétés pour un même élement HTML.">
     </head>
     <body class="
     article-page
@@ -269,7 +269,33 @@ Via un fichier externe. Via un lien externe. Directement dans la page via l&amp;
         <li><a href="#liens-externes">Liens externes</a></li>
       </ol>
     </li>
-    <li><a href="#altèrer-le-texte">Altèrer le texte</a></li>
+    <li><a href="#les-unités-de-mesure-en-css">Les unités de mesure en CSS</a>
+      <ol>
+        <li><a href="#les-unités-de-mesures-absolue">Les unités de mesures absolue</a></li>
+        <li><a href="#les-unités-de-mesure-relative">Les unités de mesure relative</a></li>
+      </ol>
+    </li>
+    <li><a href="#les-marges-margin-et-padding">Les marges (margin et padding)</a>
+      <ol>
+        <li><a href="#padding">Padding</a></li>
+        <li><a href="#margin">Margin</a></li>
+      </ol>
+    </li>
+    <li><a href="#altèrer-le-texte">Altèrer le texte</a>
+      <ol>
+        <li><a href="#définir-une-typographie">Définir une typographie</a>
+          <ol>
+            <li><a href="#importer-une-typographie">Importer une typographie</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#background">Background</a>
+      <ol>
+        <li><a href="#background--color">Background : Color</a></li>
+        <li><a href="#background--image">Background : Image</a></li>
+      </ol>
+    </li>
   </ol>
 </nav>
         </div>
@@ -313,7 +339,7 @@ Via un fichier externe. Via un lien externe. Directement dans la page via l&amp;
 
 
                 <time class="article-time--reading">
-                    4 minutes de lecture
+                    7 minutes de lecture
                 </time>
             </div>
         
@@ -338,27 +364,56 @@ Via un fichier externe. Via un lien externe. Directement dans la page via l&amp;
 <li>Directement dans la page via l&rsquo;en-tête.</li>
 <li>Directement dans la page via les éléments HTML.</li>
 </ul>
-<p>Le terme en &lsquo;cascade&rsquo; signifie qu&rsquo;on peut définir plusieurs fois des règles pour un même élement. Il y a une notion de priorité pour savoir quel règle est prioritaire par apport à une autre quand il existe plusieurs définitions.</p>
+<p>Le terme en &lsquo;cascade&rsquo; signifie qu&rsquo;on peut définir plusieurs fois des propriétés pour un même élement HTML. Il y a une notion de priorité pour savoir quel propriété est prioritaire par apport à une autre quand il existe plusieurs définitions.</p>
 <ul>
 <li>
-<p>En premier, le CSS va appliquer les règles dans les fichiers ou lien externe suivant la priorité définie dans le <code>&lt;head&gt;</code> (du haut vers le bas).</p>
+<p>En premier, le CSS va appliquer les propriétés dans les fichiers ou lien externe suivant la priorité définie dans le <code>&lt;head&gt;</code> (du haut vers le bas).</p>
 </li>
 <li>
 <p>En 2éme, il va importer le style défini dans le <code>&lt;head&gt;</code> via la balise <code>&lt;style&gt;</code>.</p>
 </li>
-<li>
-<p>En 3éme, il va appliquer le CSS qui est défini directement dans la balise HTML.</p>
-</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"> <span class="o">&lt;</span><span class="nt">link</span> <span class="nt">rel</span><span class="o">=</span><span class="s2">&#34;stylesheet&#34;</span> <span class="nt">href</span><span class="o">=</span><span class="s2">&#34;&lt;path&gt;.css&#34;</span> <span class="o">/&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>En 3éme, il va appliquer le CSS qui est défini directement dans la balise HTML.</li>
 </ul>
 <p>Cette règle de lecture est en réalité pas correct, le CSS va être lu du haut vers le bas.</p>
-<p>Il est donc possible que les règles dans la balise <code>&lt;style&gt;</code> défnie dans <code>&lt;head&gt;</code> soit écrasé si des ressources exeternes est définies <em><strong>après</strong></em>. Néanmoins, l&rsquo;idée est de partir des règles génériques au plus spécifique. Il n&rsquo;y a donc aucun logique a ne pas importer les fichiers externes en premier.</p>
-<p>Quand une règle est défini plusieurs fois, alors cette règle est appliqué pour savoir quel est la plus prioritaire :</p>
+<p>Il est donc possible que les sélécteurs dans la balise <code>&lt;style&gt;</code> défnie dans <code>&lt;head&gt;</code> soit écrasé si des ressources exeternes est définies <em><strong>après</strong></em>. Néanmoins, l&rsquo;idée est de partir des règles génériques au plus spécifique. Il n&rsquo;y a donc aucun logique a ne pas importer les fichiers externes en premier.</p>
+<p>Quand une propriété est défini plusieurs fois dans un élément HTML, alors cette règle est appliqué pour savoir quel est la plus prioritaire :</p>
 <ul>
-<li>Règle de balise</li>
-<li>Règle de class</li>
-<li>Règle d&rsquo;id</li>
-<li>Règle dans la balise</li>
+<li>Propriété dans les selecteur de balise</li>
+<li>Propriété dans les selecteur de class</li>
+<li>Propriété dans les selecteur d&rsquo;id</li>
+<li>Propriété dans la balise.</li>
+<li>Des combinaisons des précédents.</li>
 </ul>
+<p>Exemple de sélécteur</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="nt">sélecteur</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">propriété1</span><span class="p">:</span> <span class="n">valeur1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">propriété2</span><span class="p">:</span> <span class="n">valeur2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">propriété3</span><span class="p">:</span> <span class="n">valeur3</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>Quand un navigateur n&rsquo;est pas compatible, il ignore simplement la règle.</p>
+</blockquote>
 <p>Exemple de priorité en CSS :
 <a class="link" href="https://codesandbox.io/s/css-priorite-remhet?file=/index.html"  target="_blank" rel="noopener"
     >https://codesandbox.io/s/css-priorite-remhet?file=/index.html</a></p>
@@ -469,8 +524,280 @@ Via un fichier externe. Via un lien externe. Directement dans la page via l&amp;
 </ul>
 </li>
 </ul>
+<h2 id="les-unités-de-mesure-en-css">Les unités de mesure en CSS</h2>
+<p>Il est possible de définir plusieurs unités différentes pour exprimer une longueur.</p>
+<h3 id="les-unités-de-mesures-absolue">Les unités de mesures absolue</h3>
+<p>Les unités de longueur absolue sont fixes et une longueur exprimée dans l&rsquo;une d&rsquo;entre elles apparaîtra exactement comme défini.</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cm</td>
+<td>centimeters</td>
+</tr>
+<tr>
+<td>mm</td>
+<td>millimeters</td>
+</tr>
+<tr>
+<td>in</td>
+<td>inch (1in = 96px = 2.54cm)</td>
+</tr>
+<tr>
+<td>px*</td>
+<td>pixels (1px = 1/96th of 1in)</td>
+</tr>
+<tr>
+<td>pt</td>
+<td>points (1pt = 1/72 de 1 in)</td>
+</tr>
+<tr>
+<td>pc</td>
+<td>picas (1pc = 12 pt)</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>(*) Les pixels (px) sont relatifs à l&rsquo;appareil de visualisation.<br> Pour les appareils à faible résolution, 1px correspond à un pixel (point) de l&rsquo;appareil de l&rsquo;affichage.
+<br> Les imprimantes et les écrans haute résolution. 1px implique plusieurs pixels de périphérique.</p>
+</blockquote>
+<h3 id="les-unités-de-mesure-relative">Les unités de mesure relative</h3>
+<p>Les unités de longueur relative permet de définir une longueur dite relative. Les unités relative évoluent entre différents supports de rendu.</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>em</td>
+<td>Relatif à la taille de la police de l&rsquo;élément (2 em signifie 2 fois la taille de la police actuelle).</td>
+</tr>
+<tr>
+<td>ex</td>
+<td>Par rapport à la hauteur x de la police actuelle</td>
+</tr>
+<tr>
+<td>ch</td>
+<td>Par rapport à la largeur du &ldquo;0&rdquo; (zéro)</td>
+</tr>
+<tr>
+<td>rem</td>
+<td>Relatif à la taille de police de l&rsquo;élément root</td>
+</tr>
+<tr>
+<td>vw</td>
+<td>Par rapport à 1 % de la largeur de la fenêtre d&rsquo;affichage*</td>
+</tr>
+<tr>
+<td>vh</td>
+<td>Par rapport à 1% de la hauteur du viewport*</td>
+</tr>
+<tr>
+<td>vmin</td>
+<td>Par rapport à 1 % de la plus petite dimension de la fenêtre d&rsquo;affichage*</td>
+</tr>
+<tr>
+<td>vmax</td>
+<td>Par rapport à 1 % de la plus grande dimension de la fenêtre d&rsquo;affichage*</td>
+</tr>
+<tr>
+<td>%</td>
+<td>Relatif à l&rsquo;élément parent</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>(*) Viewport = La taille de la fenêtre du navigateur.
+Si la fenêtre a une largeur de 50 cm, 1vw = 0,5 cm.</p>
+</blockquote>
+<h2 id="les-marges-margin-et-padding">Les marges (margin et padding)</h2>
+<p>Un élément HTML possède :</p>
+<ul>
+<li>Une taille</li>
+<li>Une marge intérieure (padding)</li>
+<li>Une bordure</li>
+<li>Une marge extérieure (margin)</li>
+</ul>
+<p><img src="/css/element-html-model.png"
+	width="321"
+	height="223"
+	srcset="/css/element-html-model_hu1dfe341d7b300b18f4cc6245ddf31927_10334_480x0_resize_box_3.png 480w, /css/element-html-model_hu1dfe341d7b300b18f4cc6245ddf31927_10334_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+		alt="le layout d&rsquo;un élément HTML"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="143"
+		data-flex-basis="345px"
+	
+></p>
+<h3 id="padding">Padding</h3>
+<p>les marges intérieures (padding) permettent d&rsquo;ajouter des marges à l&rsquo;intérieur de l&rsquo;élément HTML autour de son contenu.</p>
+<p><a class="link" href="https://codesandbox.io/s/padding-example-xcb8fo?file=/index.html"  target="_blank" rel="noopener"
+    >https://codesandbox.io/s/padding-example-xcb8fo?file=/index.html</a></p>
+<p>Il existe les propriétés :</p>
+<ul>
+<li>padding-top</li>
+<li>padding-right</li>
+<li>padding-bottom</li>
+<li>padding-left</li>
+</ul>
+<p>ou juste la propriété &ldquo;padding&rdquo; qui permet de définir chaque côté :</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"> <span class="nt">sélecteur</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">padding</span><span class="p">:</span> <span class="o">&lt;</span><span class="kc">top</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="kc">right</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="kc">bottom</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="kc">left</span><span class="o">&gt;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Néanmoins, il est possible de ne pas définir chaque côté.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"> <span class="nt">sélecteur</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">padding</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Permet de définir 10 pixels de chaque côté.</p>
+<hr>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"> <span class="nt">sélecteur</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">padding</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Permet de définir 10 pixels en haut et en bas et 20 pixels à gauche et à droite.</p>
+<hr>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"> <span class="nt">sélecteur</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">padding</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span> <span class="mi">20</span><span class="kt">px</span> <span class="mi">30</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Permet de définir 10 pixels en haut, 20 pixels à gauche et à droite et 30 pixels en bas.</p>
+<hr>
+<blockquote>
+<p>Il existe un moyen mnémotechnique de retenir l&rsquo;ordre des valeurs :<br> Il faut penser à une horloge et au sens de celle-ci.</p>
+</blockquote>
+<ul>
+<li>12h =&gt; top</li>
+<li>3h =&gt; right</li>
+<li>6h =&gt; bottom</li>
+<li>9h =&gt; left</li>
+</ul>
+<h3 id="margin">Margin</h3>
+<p>les marges extérieures (margin) permettent d&rsquo;ajouter des marges à l&rsquo;éxtérieur de l&rsquo;élément HTML.</p>
+<p><a class="link" href="https://codesandbox.io/s/margin-example-pfj15r?file=/index.html"  target="_blank" rel="noopener"
+    >https://codesandbox.io/s/margin-example-pfj15r?file=/index.html</a></p>
+<p>Il existe les propriétés :</p>
+<ul>
+<li>margin-top</li>
+<li>margin-right</li>
+<li>margin-bottom</li>
+<li>margin-left</li>
+</ul>
+<p>ou juste la propriété &ldquo;margin&rdquo; qui permet de définir chaque côté :</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"> <span class="nt">sélecteur</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">margin</span><span class="p">:</span> <span class="o">&lt;</span><span class="kc">top</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="kc">right</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="kc">bottom</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="kc">left</span><span class="o">&gt;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Néanmoins, il est possible de ne pas définir chaque côté.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"> <span class="nt">sélecteur</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">margin</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Permet de définir 10 pixels de chaque côté.</p>
+<hr>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"> <span class="nt">sélecteur</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">margin</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Permet de définir 10 pixels en haut et en bas et 20 pixels à gauche et à droite.</p>
+<hr>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"> <span class="nt">sélecteur</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">margin</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span> <span class="mi">20</span><span class="kt">px</span> <span class="mi">30</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"> <span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Permet de définir 10 pixels en haut, 20 pixels à gauche et à droite et 30 pixels en bas.</p>
+<hr>
+<blockquote>
+<p>Il existe un moyen mnémotechnique de retenir l&rsquo;ordre des valeurs :<br> Il faut penser à une horloge et au sens de celle-ci.</p>
+</blockquote>
+<ul>
+<li>12h =&gt; top</li>
+<li>3h =&gt; right</li>
+<li>6h =&gt; bottom</li>
+<li>9h =&gt; left</li>
+</ul>
 <h2 id="altèrer-le-texte">Altèrer le texte</h2>
-<p>//todo</p>
+<h3 id="définir-une-typographie">Définir une typographie</h3>
+<h4 id="importer-une-typographie">Importer une typographie</h4>
+<h2 id="background">Background</h2>
+<h3 id="background--color">Background : Color</h3>
+<h3 id="background--image">Background : Image</h3>
 
 </section>
 

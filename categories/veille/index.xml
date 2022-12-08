@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Veille on LBA</title>
+        <link>https://demo.stack.jimmycai.com/categories/veille/</link>
+        <description>Recent content in Veille on LBA</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>fr-BE</language>
+        <lastBuildDate>Mon, 05 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://demo.stack.jimmycai.com/categories/veille/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Veille</title>
+        <link>https://demo.stack.jimmycai.com/p/veille/</link>
+        <pubDate>Mon, 05 Dec 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://demo.stack.jimmycai.com/p/veille/</guid>
+        <description>&lt;ul&gt;
+&lt;li&gt;PowerBranch du MIC : &lt;a class=&#34;link&#34; href=&#34;https://www.mic-belgique.be/power-branch/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.mic-belgique.be/power-branch/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Podcast dans le monde dotnet : &lt;a class=&#34;link&#34; href=&#34;https://www.devapps.be/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.devapps.be/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Evénement de dev fait par les devs : &lt;a class=&#34;link&#34; href=&#34;https://www.devday.be&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.devday.be&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
