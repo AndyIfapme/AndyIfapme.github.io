@@ -6,7 +6,29 @@
         <description>Recent content in Posts on LBA</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>fr-BE</language>
-        <lastBuildDate>Mon, 05 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://demo.stack.jimmycai.com/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 14 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://demo.stack.jimmycai.com/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Veille</title>
+        <link>https://demo.stack.jimmycai.com/p/veille/</link>
+        <pubDate>Wed, 14 Dec 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://demo.stack.jimmycai.com/p/veille/</guid>
+        <description>&lt;ul&gt;
+&lt;li&gt;PowerBranch du MIC : &lt;a class=&#34;link&#34; href=&#34;https://www.mic-belgique.be/power-branch/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.mic-belgique.be/power-branch/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Podcast dans le monde dotnet : &lt;a class=&#34;link&#34; href=&#34;https://www.devapps.be/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.devapps.be/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Evénement de dev fait par les devs : &lt;a class=&#34;link&#34; href=&#34;https://www.devday.be&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.devday.be&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;MiCode : &lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/@Micode&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.youtube.com/@Micode&lt;/a&gt;
+_undercore : &lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/channel/UCWedHS9qKebauVIK2J7383g&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.youtube.com/channel/UCWedHS9qKebauVIK2J7383g&lt;/a&gt;
+Grafikart: &lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/@grafikart&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.youtube.com/@grafikart&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Exercice sur les tableaux</title>
         <link>https://demo.stack.jimmycai.com/p/exercice-tableau/</link>
         <pubDate>Mon, 05 Dec 2022 00:00:00 +0000</pubDate>
@@ -14,10 +36,10 @@
         <guid>https://demo.stack.jimmycai.com/p/exercice-tableau/</guid>
         <description>&lt;h2 id=&#34;exercice-01&#34;&gt;Exercice 01&lt;/h2&gt;
 &lt;p&gt;Reproduire le tableau ci-dessous :&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://demo.stack.jimmycai.com/p/exercice-tableau/tableau.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://demo.stack.jimmycai.com/p/exercice-tableau/table1.png&#34;
 	width=&#34;568&#34;
 	height=&#34;736&#34;
-	srcset=&#34;https://demo.stack.jimmycai.com/p/exercice-tableau/tableau_hud686989afe0a5a42585467ba8bee37a9_3870_480x0_resize_box_3.png 480w, https://demo.stack.jimmycai.com/p/exercice-tableau/tableau_hud686989afe0a5a42585467ba8bee37a9_3870_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://demo.stack.jimmycai.com/p/exercice-tableau/table1_hud686989afe0a5a42585467ba8bee37a9_3870_480x0_resize_box_3.png 480w, https://demo.stack.jimmycai.com/p/exercice-tableau/table1_hud686989afe0a5a42585467ba8bee37a9_3870_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;tableau à reproduire&#34;
@@ -30,22 +52,24 @@
 &gt;&lt;/p&gt;
 &lt;p&gt;Corrigé : &lt;a class=&#34;link&#34; href=&#34;https://codesandbox.io/s/exercice1-table-10ht5t&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://codesandbox.io/s/exercice1-table-10ht5t&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>Veille</title>
-        <link>https://demo.stack.jimmycai.com/p/veille/</link>
-        <pubDate>Mon, 05 Dec 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://demo.stack.jimmycai.com/p/veille/</guid>
-        <description>&lt;ul&gt;
-&lt;li&gt;PowerBranch du MIC : &lt;a class=&#34;link&#34; href=&#34;https://www.mic-belgique.be/power-branch/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.mic-belgique.be/power-branch/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Podcast dans le monde dotnet : &lt;a class=&#34;link&#34; href=&#34;https://www.devapps.be/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.devapps.be/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Evénement de dev fait par les devs : &lt;a class=&#34;link&#34; href=&#34;https://www.devday.be&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.devday.be&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;exercice-02&#34;&gt;Exercice 02&lt;/h2&gt;
+&lt;p&gt;Reproduire le tableau ci-dessous :&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://demo.stack.jimmycai.com/p/exercice-tableau/table2.png&#34;
+	width=&#34;825&#34;
+	height=&#34;628&#34;
+	srcset=&#34;https://demo.stack.jimmycai.com/p/exercice-tableau/table2_hua22366634e04aa18bcc67aa0fe6ea9c4_3923_480x0_resize_box_3.png 480w, https://demo.stack.jimmycai.com/p/exercice-tableau/table2_hua22366634e04aa18bcc67aa0fe6ea9c4_3923_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;tableau à reproduire&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;131&#34;
+		data-flex-basis=&#34;315px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;Corrigé : &lt;a class=&#34;link&#34; href=&#34;https://codesandbox.io/s/exercice-2-table-r4gwk6?file=/index.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://codesandbox.io/s/exercice-2-table-r4gwk6?file=/index.html&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
         
