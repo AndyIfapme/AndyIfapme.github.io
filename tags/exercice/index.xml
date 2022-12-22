@@ -6,7 +6,37 @@
         <description>Recent content in Exercice on LBA</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>fr-BE</language>
-        <lastBuildDate>Mon, 05 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://demo.stack.jimmycai.com/tags/exercice/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 22 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://demo.stack.jimmycai.com/tags/exercice/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Exercice de l&#39;année</title>
+        <link>https://demo.stack.jimmycai.com/p/exercice-year/</link>
+        <pubDate>Thu, 22 Dec 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://demo.stack.jimmycai.com/p/exercice-year/</guid>
+        <description>&lt;p&gt;Vous devez créer un site internet qui représente votre CV.&lt;/p&gt;
+&lt;p&gt;Cet exercice va se dérouler tout au long de l&amp;rsquo;année en différentes phases.
+L&amp;rsquo;objectif est de pratiquer vos connaissances et vous faire monter en compétence sur un vrai cas d&amp;rsquo;utilisation.&lt;/p&gt;
+&lt;p&gt;Il sera divisé plusieurs deadlines à respecter et cela comptera sur l&amp;rsquo;évaluation pratique journalière.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Si vous avez déjà un site vitrine pour votre CV, il est possible de changer de sujet d&amp;rsquo;accord à accord.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Dans votre CV, on doit retrouver :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Une petite présentation de vous.&lt;/li&gt;
+&lt;li&gt;Vos expériences : Professionnel ou personnel (ex: les recruteurs aiment ceux qui ont fait le scout).&lt;/li&gt;
+&lt;li&gt;Vos compétences&lt;/li&gt;
+&lt;li&gt;Vos études&lt;/li&gt;
+&lt;li&gt;Vos langues&lt;/li&gt;
+&lt;li&gt;vos loisirs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Il n&amp;rsquo;est pas nécessaire de mettre vos informations privées comme votre numéro de téléphone, adresse email, etc.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;le-190123&#34;&gt;Le 19/01/23&lt;/h2&gt;
+&lt;p&gt;Rédaction de la structure HTML et du texte.&lt;/p&gt;
+&lt;p&gt;Date de remise : Le 19/01/23 pour vous laisser la possibilité de me poser vos questions durant le cours après les vacances d&amp;rsquo;hiver.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Exercice sur les tableaux</title>
         <link>https://demo.stack.jimmycai.com/p/exercice-tableau/</link>
         <pubDate>Mon, 05 Dec 2022 00:00:00 +0000</pubDate>

@@ -6,7 +6,37 @@
         <description>Recent content on LBA</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>fr-BE</language>
-        <lastBuildDate>Wed, 14 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://demo.stack.jimmycai.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 22 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://demo.stack.jimmycai.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Exercice de l&#39;année</title>
+        <link>https://demo.stack.jimmycai.com/p/exercice-year/</link>
+        <pubDate>Thu, 22 Dec 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://demo.stack.jimmycai.com/p/exercice-year/</guid>
+        <description>&lt;p&gt;Vous devez créer un site internet qui représente votre CV.&lt;/p&gt;
+&lt;p&gt;Cet exercice va se dérouler tout au long de l&amp;rsquo;année en différentes phases.
+L&amp;rsquo;objectif est de pratiquer vos connaissances et vous faire monter en compétence sur un vrai cas d&amp;rsquo;utilisation.&lt;/p&gt;
+&lt;p&gt;Il sera divisé plusieurs deadlines à respecter et cela comptera sur l&amp;rsquo;évaluation pratique journalière.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Si vous avez déjà un site vitrine pour votre CV, il est possible de changer de sujet d&amp;rsquo;accord à accord.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Dans votre CV, on doit retrouver :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Une petite présentation de vous.&lt;/li&gt;
+&lt;li&gt;Vos expériences : Professionnel ou personnel (ex: les recruteurs aiment ceux qui ont fait le scout).&lt;/li&gt;
+&lt;li&gt;Vos compétences&lt;/li&gt;
+&lt;li&gt;Vos études&lt;/li&gt;
+&lt;li&gt;Vos langues&lt;/li&gt;
+&lt;li&gt;vos loisirs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Il n&amp;rsquo;est pas nécessaire de mettre vos informations privées comme votre numéro de téléphone, adresse email, etc.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;le-190123&#34;&gt;Le 19/01/23&lt;/h2&gt;
+&lt;p&gt;Rédaction de la structure HTML et du texte.&lt;/p&gt;
+&lt;p&gt;Date de remise : Le 19/01/23 pour vous laisser la possibilité de me poser vos questions durant le cours après les vacances d&amp;rsquo;hiver.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Veille</title>
         <link>https://demo.stack.jimmycai.com/p/veille/</link>
         <pubDate>Wed, 14 Dec 2022 00:00:00 +0000</pubDate>
@@ -20,12 +50,15 @@
 &lt;/ul&gt;
 &lt;p&gt;Evénement de dev fait par les devs : &lt;a class=&#34;link&#34; href=&#34;https://www.devday.be&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.devday.be&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;MiCode : &lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/@Micode&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.youtube.com/@Micode&lt;/a&gt;
-_undercore : &lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/channel/UCWedHS9qKebauVIK2J7383g&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.youtube.com/channel/UCWedHS9qKebauVIK2J7383g&lt;/a&gt;
-Grafikart: &lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/@grafikart&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.youtube.com/@grafikart&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Youtube :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;MiCode : &lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/@Micode&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.youtube.com/@Micode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;_undercore : &lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/channel/UCWedHS9qKebauVIK2J7383g&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.youtube.com/channel/UCWedHS9qKebauVIK2J7383g&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Grafikart: &lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/@grafikart&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.youtube.com/@grafikart&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         <item>
@@ -516,6 +549,7 @@ Si la fenêtre a une largeur de 50 cm, 1vw = 0,5 cm.&lt;/p&gt;
 &lt;li&gt;6h =&amp;gt; bottom&lt;/li&gt;
 &lt;li&gt;9h =&amp;gt; left&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;sélecteur-dattribut&#34;&gt;Sélecteur d&amp;rsquo;attribut&lt;/h2&gt;
 &lt;h2 id=&#34;altèrer-le-texte&#34;&gt;Altèrer le texte&lt;/h2&gt;
 &lt;h3 id=&#34;définir-une-typographie&#34;&gt;Définir une typographie&lt;/h3&gt;
 &lt;h4 id=&#34;importer-une-typographie&#34;&gt;Importer une typographie&lt;/h4&gt;

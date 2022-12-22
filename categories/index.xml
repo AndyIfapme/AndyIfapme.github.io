@@ -6,20 +6,20 @@
         <description>Recent content in Categories on LBA</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>fr-BE</language>
-        <lastBuildDate>Wed, 14 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://demo.stack.jimmycai.com/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 22 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://demo.stack.jimmycai.com/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Exercice</title>
+        <link>https://demo.stack.jimmycai.com/categories/exercice/</link>
+        <pubDate>Thu, 22 Dec 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://demo.stack.jimmycai.com/categories/exercice/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Veille</title>
         <link>https://demo.stack.jimmycai.com/categories/veille/</link>
         <pubDate>Wed, 14 Dec 2022 00:00:00 +0000</pubDate>
         
         <guid>https://demo.stack.jimmycai.com/categories/veille/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Exercice</title>
-        <link>https://demo.stack.jimmycai.com/categories/exercice/</link>
-        <pubDate>Mon, 05 Dec 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://demo.stack.jimmycai.com/categories/exercice/</guid>
         <description></description>
         </item>
         <item>
